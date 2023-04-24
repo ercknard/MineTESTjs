@@ -1,7 +1,17 @@
+@font-face {
+	font-family: Minecraftmainfont;
+	src: url(/font/Minetest\ Font.ttf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html {
+	font-size: 1rem;
+	font-weight: normal;
 }
 
 body::-webkit-scrollbar {
@@ -52,6 +62,7 @@ section img {
 }
 
 .sec h2 {
+    font-family: Minecraftmainfont, Garamond, serif;
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
@@ -63,6 +74,7 @@ section img {
 }
 
 .nav-buttons {
+    font-family: Minecraftmainfont, Garamond, serif;
 	text-decoration: none;
 	color: white;
 	padding: 1.5rem;
