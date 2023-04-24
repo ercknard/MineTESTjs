@@ -61,3 +61,68 @@ section img {
     font-size: 1em;
     color: #fff;
 }
+
+.nav-buttons {
+	text-decoration: none;
+	color: white;
+	padding: 1.5rem;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.nav-buttons:hover {
+	background-image: linear-gradient(to top, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+	transform: translateY(3px);
+}
+
+.nav-buttons:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.nav-buttons:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.navigation-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	text-decoration: none;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.width-class {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+}
+
+.index-navigation {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+}
+
+.index-logo {
+	width: 25rem;
+	padding: 10px;
+}
