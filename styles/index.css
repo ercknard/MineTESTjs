@@ -10,11 +10,13 @@ body::-webkit-scrollbar {
 	scrollbar-width: none;
 }
 
-.container {
+body {
+    min-height: 100vh;
     background: linear-gradient(to bottom, black, blue, #60b4f4);
 }
 
-.parallax {
+
+section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -24,7 +26,7 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
-/* section ::before {
+section::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -32,90 +34,30 @@ body::-webkit-scrollbar {
     height: 100px;
     background: linear-gradient(to top, #3b6718, transparent);
     z-index: 1000;
-} */
+}
 
-#front-bg {
+section img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 4;
 }
 
-#mid-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 3;
-}
-
-#sun {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 2;
-}
-
-#cloudI {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-#cloudII {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-#cloudIII {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-#cloudIV {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-#back-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.description {
+.sec {
     position: relative;
-    padding: 100%;
-    z-index: 10;
+    padding: 100px;
+    background: #3b6718;
+}
+
+.sec h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
 }
