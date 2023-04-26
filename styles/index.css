@@ -192,6 +192,16 @@ header {
 	}
 }
 
+@-webkit-keyframes main-clouds-anim {
+	0% {
+		transform: translateX(100px);
+	}
+
+	100% {
+		transform: translateX(-500px);
+	}
+}
+
 .earth-bg {
 	background: linear-gradient(to bottom, black, #60b4f4);
 }
@@ -201,6 +211,11 @@ header {
 	-webkit-animation: clouds-anim 30s infinite;
 	animation: clouds-anim 30s infinite;
 	position: absolute;
+}
+
+.clouds {
+	-webkit-animation: main-clouds-anim 30s infinite;
+	animation: main-clouds-anim 30s infinite;
 }
 
 .cloudI {
