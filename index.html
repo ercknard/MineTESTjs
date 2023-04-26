@@ -49,12 +49,11 @@
     <section class="earth-bg">
         <img class="bg-cloud" src="images/cloud10.png">
         <img src="images/pepe.png" id="pepe-bg">
-        <img src="images/BG-B.png" id="back-bg">
+        <img src="images/BG-B.webp" id="back-bg">
         <img src="images/SUN.png" id="sun">
         <img class="cloudI clouds" src="images/cloud8.png" id="cloudI">
-        <img class="cloudII clouds" src="images/cloud7.png" id="cloudII">
-        <img src="images/BG-M.png" id="mid-bg">
-        <img src="images/BG-F.png" id="front-bg">
+        <img src="images/BG-M.webp" id="mid-bg">
+        <img src="images/BG-F.webp" id="front-bg">
         <h1 id="web_title"> Welcome to <span class="typed-text"></span><span class="cursor typing">.</span> </h1>
     </section>
 
@@ -126,7 +125,6 @@ Odio euismod lacinia at quis risus sed vulputate odio ut. Commodo quis imperdiet
     let mid_bg = document.getElementById('mid-bg');
     let sun = document.getElementById('sun');
     let cloudI = document.getElementById('cloudI');
-    let cloudII = document.getElementById('cloudII');
     let back_bg = document.getElementById('back-bg');
 
     window.addEventListener('scroll',function(){
@@ -135,7 +133,6 @@ Odio euismod lacinia at quis risus sed vulputate odio ut. Commodo quis imperdiet
         mid_bg.style.top = value * 0.50 + 'px';
         sun.style.top = value * .9 + 'px';
         cloudI.style.left = value * .5 + 'px';
-        cloudII.style.left = value * .25 + 'px';
         back_bg.style.top = value * 0.75 + 'px';
     })
     </script>
