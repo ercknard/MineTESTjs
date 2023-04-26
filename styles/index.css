@@ -38,6 +38,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+	overflow: hidden;
 }
 
 section::before {
@@ -170,8 +171,8 @@ header {
 
 #particles-js {
 	position: fixed;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	color: #fff;
 	z-index: 1;
 }
@@ -199,7 +200,7 @@ header {
 	}
 
 	90% {
-		opacity: 70%;
+		opacity: 50%;
 	}
 
 	100% {
@@ -272,7 +273,7 @@ header {
 .main-footer {
 	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
 	background-color: transparent;
-	border-top: 2px solid white;
+	border-top: 1px solid white;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
@@ -327,7 +328,7 @@ header {
 }
 
 .cave {
-    width: 100%;
+    width: 100vw;
 	height: auto;
 	-webkit-animation: cave-anim 5s infinite;
 	animation: cave-anim 5s infinite;
