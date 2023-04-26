@@ -67,7 +67,7 @@ section img#sun{
 .sec {
     position: relative;
     padding: 100px;
-    background: #3b6718;
+	background: linear-gradient(to bottom, #3b6718, #2d5472, transparent);
 	z-index: 3;
 }
 
@@ -277,13 +277,12 @@ header {
 
 .main-footer {
 	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
-	background-color: #3b6718;
-	border-top: 1px solid #3b6718;
+	background-color: transparent;
+	border-top: 1px solid white;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
 	bottom: 0;
-	z-index: 100;
 }
 
 .social-icon,
@@ -332,4 +331,9 @@ header {
 
 .outer-space {
 	padding: 10%;
+}
+
+.cave {
+    width: 100%;
+    object-fit: cover;
 }
