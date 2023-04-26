@@ -233,7 +233,7 @@ header {
 	opacity: 70%;
 }
 
-#web_title_bg {
+/* #web_title_bg {
 	position: absolute;
 	font-size: 15rem;
 	color: #3b6718;
@@ -249,7 +249,7 @@ header {
 	-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 	margin-left: auto; 
 	margin-right: auto; 
-}
+} */
 
 #web_title {
 	position: absolute;
@@ -270,15 +270,11 @@ header {
 	margin-right: auto; 
 }
 
-.to-divide {
+/* .to-divide {
 	display: block;
 	font-size: 1rem;
 	top: -100px;
-}
-
-#pepeland {
-	z-index: 2;
-}
+} */
 
 .main-footer {
 	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
