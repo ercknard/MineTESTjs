@@ -195,10 +195,16 @@ header {
 @-webkit-keyframes main-clouds-anim {
 	0% {
 		transform: translateX(100px);
+		opacity: 0;
+	}
+
+	90% {
+		opacity: 70%;
 	}
 
 	100% {
 		transform: translateX(-500px);
+		opacity: 0;
 	}
 }
 
