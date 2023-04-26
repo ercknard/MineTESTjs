@@ -27,6 +27,7 @@ body::-webkit-scrollbar {
 }
 
 body {
+	background-color: black;
 }
 
 
@@ -34,7 +35,6 @@ section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,4 +329,8 @@ header {
 #pepe-bg {
 	position: absolute;
 	z-index: 1;
+}
+
+.outer-space {
+	padding: 10%;
 }
