@@ -3,7 +3,7 @@ function talk() {
     var messages = [
       "Hello, adventurer!",
       "I'm Pepe.",
-      "Welcome to CrytechTest.",
+      "Welcome to CryptechTest.",
       "Wanna play with me?",
       "Come back soon!"
     ];
