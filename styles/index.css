@@ -56,6 +56,7 @@ section img {
     top: 0;
     left: 0;
     width: 100%;
+	height: auto;
     object-fit: cover;
 	z-index: 2;
 }
@@ -87,10 +88,14 @@ section img#sun{
 .nav-buttons {
 	text-decoration: none;
 	color: white;
-	padding: 1.5rem;
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .nav-buttons:hover {
@@ -123,8 +128,6 @@ section img#sun{
 	align-items: center;
 	list-style: none;
 	text-decoration: none;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 }
 
 header {
@@ -159,10 +162,15 @@ header {
 }
 
 .index-navigation {
-	position: absolute;
+	position: fixed;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
 	width: 100%;
 	z-index: 10;
+}
+
+.index-navigation.scrolled {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) !important;
+	border-bottom: 1px solid #3b6718;
 }
 
 .index-logo {
@@ -210,7 +218,7 @@ header {
 }
 
 .earth-bg {
-	background: linear-gradient(to bottom, black, #60b4f4);
+	background: linear-gradient(to bottom, black, #3a7fbe);
 }
 
 .bg-cloud {
@@ -273,7 +281,7 @@ header {
 .main-footer {
 	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
 	background-color: transparent;
-	border-top: 1.5px solid white;
+	border-top: 1px solid #3b6718;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
