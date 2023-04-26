@@ -3,6 +3,11 @@
 	src: url(/font/Minetest\ Font.ttf);
 }
 
+@font-face {
+	font-family: Minecraftsubfont;
+	src: url(/font/VT323-Regular.ttf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +17,7 @@
 html {
 	font-size: 1rem;
 	font-weight: normal;
+	font-family: Minecraftsubfont, Garamond, serif;
 }
 
 body::-webkit-scrollbar {
@@ -55,8 +61,8 @@ section img {
     object-fit: cover;
 }
 
-section img#back-bg {
-
+section img#sun{
+	filter: drop-shadow(1px 1px 100px rgba(255, 255, 255, 1))
 }
 
 .sec {
@@ -78,7 +84,6 @@ section img#back-bg {
 }
 
 .nav-buttons {
-    font-family: Minecraftmainfont, Garamond, serif;
 	text-decoration: none;
 	color: white;
 	padding: 1.5rem;
@@ -136,7 +141,9 @@ header {
 }
 
 .index-navigation {
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+	/* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
+	background-color: #000;
+	border-bottom: 1px solid #3b6718;
 }
 
 .index-logo {
@@ -149,5 +156,115 @@ header {
 	width: 100%;
 	height: 100%;
 	color: #fff;
-    z-index: 1;
+}
+
+@-webkit-keyframes clouds-anim {
+	0% {
+		left: 0vw;
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateX(3px);
+	}
+
+	100% {
+		left: 100vw;
+		transform: translateY(100px);
+	}
+}
+
+.earth-bg {
+	background-color: #79c4f4;
+}
+
+.bg-cloud {
+	opacity: 10%;
+	-webkit-animation: clouds-anim 60s infinite;
+	animation: clouds-anim 60s infinite;
+}
+
+.cloudI {
+	opacity: 50%;
+}
+
+.cloudII {
+	opacity: 70%;
+}
+
+#web_title {
+	font-size: 5rem;
+	color: #3b6718;
+	text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+	-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+	text-align: center;
+}
+
+.to-divide {
+	display: block;
+	font-size: 1rem;
+	top: -100px;
+}
+
+#pepeland {
+	z-index: 2;
+}
+
+.main-footer {
+	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
+	background-color: #000;
+	border-top: 1px solid #3b6718;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 10;
+}
+
+.social-icon,
+.menu {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: .5rem 0;
+	flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+	list-style: none;
+}
+
+.social-icon__link {
+	font-size: 2rem;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.social-icon__link:hover {
+	transform: translateY(-10px);
+}
+
+.main-footer-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.typed-text {
+	color: white;
+	z-index: 9999;
 }

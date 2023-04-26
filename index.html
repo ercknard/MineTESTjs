@@ -45,16 +45,17 @@
         <script src="scripts/particles.js"></script>
      </div>
 
-    <section>
+    <section class="earth-bg">
+        <img class="bg-cloud" src="images/cloud10.png">
         <img src="images/BG-B.png" id="back-bg">
-        <img src="images/cloud8.png" id="cloudIV">
-        <img src="images/cloud7.png" id="cloudIII">
-        <img src="images/cloud5.png" id="cloudII">
-        <img src="images/cloud2.png" id="cloudI">
         <img src="images/SUN.png" id="sun">
+        <!-- <img src="images/pepe-land.png" id="pepeland"> -->
+        <img class="cloudI clouds" src="images/cloud8.png" id="cloudI">
+        <img class="cloudII clouds" src="images/cloud7.png" id="cloudII">
         <img src="images/BG-M.png" id="mid-bg">
         <img src="images/BG-F.png" id="front-bg">
-
+        <div class="to-divide">
+        <h1 id="web_title"> Welcome to <span class="typed-text"></span><span class="cursor typing">.</span> </h1>
     </section>
 
             <div class="sec">
@@ -91,6 +92,32 @@ Sed sed risus pretium quam. Eu volutpat odio facilisis mauris sit amet. Aliquet 
 Odio euismod lacinia at quis risus sed vulputate odio ut. Commodo quis imperdiet massa tincidunt nunc pulvinar. Dui faucibus in ornare quam viverra. Integer malesuada nunc vel risus commodo viverra maecenas accumsan. Porttitor massa id neque aliquam vestibulum morbi blandit. Non tellus orci ac auctor augue mauris augue neque. Pellentesque sit amet porttitor eget dolor. Tempus quam pellentesque nec nam. Orci porta non pulvinar neque. Volutpat blandit aliquam etiam erat velit scelerisque. Porta lorem mollis aliquam ut porttitor. Tortor dignissim convallis aenean et tortor at risus. Risus quis varius quam quisque id diam vel. Consectetur adipiscing elit duis tristique sollicitudin nibh. Vitae auctor eu augue ut lectus.
 </p>
 </div>
+<footer class="main-footer">
+   <!-- <img class="footer-icon" src="/images/icons/pack.webp"> </img> -->
+   <ul class="social-icon">
+      <li class="social-icon__item">
+         <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+         </a>
+      </li>
+      <li class="social-icon__item">
+         <a class="social-icon__link" href="https://twitter.com/CryptechCraft">
+            <ion-icon name="logo-twitter"></ion-icon>
+         </a>
+      </li>
+      <li class="social-icon__item">
+         <a class="social-icon__link" href="https://discord.com/invite/WxvrzzPFAH">
+            <ion-icon name="logo-discord"></ion-icon>
+         </a>
+      </li>
+      <li class="social-icon__item">
+         <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+         </a>
+      </li>
+   </ul>
+   <h3 class="main-footer-text text-motion-index"> © 2023 CryptechTest | All rights reserved.</h3>
+</footer>
 
    </body>
 
@@ -100,20 +127,23 @@ Odio euismod lacinia at quis risus sed vulputate odio ut. Commodo quis imperdiet
     let sun = document.getElementById('sun');
     let cloudI = document.getElementById('cloudI');
     let cloudII = document.getElementById('cloudII');
-    let cloudIII = document.getElementById('cloudIII');
-    let cloudIV = document.getElementById('cloudIV');
     let back_bg = document.getElementById('back-bg');
+    let webtitle = document.getElementById('web_title');
+    let pepe = document.getElementById('pepeland');
 
     window.addEventListener('scroll',function(){
         let value = window.scrollY;
-        front_bg.style.top = value * 0.20 + 'px';
-        mid_bg.style.top = value * 0.40 + 'px';
-        sun.style.top = value * .7 + 'px';
+        front_bg.style.top = value * 0.25 + 'px';
+        mid_bg.style.top = value * 0.50 + 'px';
+        sun.style.top = value * .9 + 'px';
         cloudI.style.left = value * .5 + 'px';
         cloudII.style.left = value * .25 + 'px';
-        cloudIII.style.left = value * .25 + 'px';
-        cloudIV.style.left = value * .15 + 'px';
-        back_bg.style.top = value * 0.60 + 'px';
+        back_bg.style.top = value * 0.75 + 'px';
+        webtitle.style.left = value * 0.75 + 'px';
+        pepe.style.top = value * 1 + 'px';
     })
     </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="scripts/typing.js"></script>
 </html>
