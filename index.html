@@ -48,6 +48,7 @@
 
     <section class="earth-bg">
         <img class="bg-cloud" src="images/cloud10.png">
+        <img src="images/pepe.png" id="pepe-bg">
         <img src="images/BG-B.png" id="back-bg">
         <img src="images/SUN.png" id="sun">
         <!-- <img src="images/pepe-land.png" id="pepeland"> -->
@@ -55,6 +56,7 @@
         <img class="cloudII clouds" src="images/cloud7.png" id="cloudII">
         <img src="images/BG-M.png" id="mid-bg">
         <img src="images/BG-F.png" id="front-bg">
+        <!-- <h1 id="web_title_bg"> CryptechTest</h1> -->
         <h1 id="web_title"> Welcome to <span class="typed-text"></span><span class="cursor typing">.</span> </h1>
     </section>
 
@@ -128,6 +130,8 @@ Odio euismod lacinia at quis risus sed vulputate odio ut. Commodo quis imperdiet
     let cloudI = document.getElementById('cloudI');
     let cloudII = document.getElementById('cloudII');
     let back_bg = document.getElementById('back-bg');
+   //  let web_title_bg = document.getElementById('web_title_bg');
+   //  let web_title = document.getElementById('web_title');
 
     window.addEventListener('scroll',function(){
         let value = window.scrollY;
@@ -137,6 +141,8 @@ Odio euismod lacinia at quis risus sed vulputate odio ut. Commodo quis imperdiet
         cloudI.style.left = value * .5 + 'px';
         cloudII.style.left = value * .25 + 'px';
         back_bg.style.top = value * 0.75 + 'px';
+      //   web_title_bg.style.left = value * 1 + 'px';
+      //   web_title.style.bottom = value * .5 + 'px';
     })
     </script>
 
