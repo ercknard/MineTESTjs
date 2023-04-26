@@ -66,8 +66,8 @@ section img#sun{
 
 .sec {
     position: relative;
-    padding: 100px;
 	background: linear-gradient(to bottom, #3b6718, #2d5472, transparent);
+	padding: 50px;
 	z-index: 3;
 }
 
@@ -194,7 +194,7 @@ header {
 
 @-webkit-keyframes main-clouds-anim {
 	0% {
-		transform: translateX(100px);
+		transform: translateX(20px);
 		opacity: 0;
 	}
 
@@ -222,15 +222,9 @@ header {
 .clouds {
 	-webkit-animation: main-clouds-anim 30s infinite;
 	animation: main-clouds-anim 30s infinite;
+	position: absolute;
 }
 
-.cloudI {
-	opacity: 50%;
-}
-
-.cloudII {
-	opacity: 70%;
-}
 
 /* #web_title_bg {
 	position: absolute;
@@ -282,7 +276,6 @@ header {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
-	bottom: 0;
 }
 
 .social-icon,
@@ -335,7 +328,7 @@ header {
 
 .cave {
     width: 100%;
-    object-fit: cover;
+	height: auto;
 	-webkit-animation: cave-anim 5s infinite;
 	animation: cave-anim 5s infinite;
 }
