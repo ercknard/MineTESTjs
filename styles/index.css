@@ -336,4 +336,20 @@ header {
 .cave {
     width: 100%;
     object-fit: cover;
+	-webkit-animation: cave-anim 5s infinite;
+	animation: cave-anim 5s infinite;
+}
+
+@-webkit-keyframes cave-anim {
+	0% {
+		filter: brightness(100%);
+	}
+
+	90% {
+		filter: brightness(200%);
+	}
+
+	100% {
+		filter: brightness(100%);
+	}
 }
