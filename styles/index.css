@@ -161,8 +161,7 @@ header {
 
 @-webkit-keyframes clouds-anim {
 	0% {
-		left: 1vw;
-		transform: translateY(0px);
+		transform: translateY(0px) translateX(20px);
 		opacity: 0;
 	}
 
@@ -171,8 +170,7 @@ header {
 	}
 
 	100% {
-		left: 50vw;
-		transform: translateY(100px);
+		transform: translateY(100px) translateX(-500px);
 		opacity: 0;
 	}
 }
@@ -185,6 +183,7 @@ header {
 	opacity: 10%;
 	-webkit-animation: clouds-anim 30s infinite;
 	animation: clouds-anim 30s infinite;
+	position: absolute;
 }
 
 .cloudI {
