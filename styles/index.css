@@ -61,7 +61,7 @@ section img {
 }
 
 section img#sun{
-	filter: drop-shadow(1px 1px 100px rgba(255, 255, 255, 1));
+	filter: drop-shadow(1px 1px 75px rgba(255, 255, 255, 1));
 	z-index: 0;
 }
 
