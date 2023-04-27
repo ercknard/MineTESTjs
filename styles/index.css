@@ -255,7 +255,7 @@ header {
 
 #web_title {
 	position: absolute;
-	font-size: 5rem;
+	font-size: 4rem;
 	color: #3b6718;
 	text-shadow:
     -1px -1px 0 #000,
@@ -270,6 +270,7 @@ header {
 	z-index: 5;
 	margin-left: auto; 
 	margin-right: auto; 
+	transition: 1s ease-in-out;
 }
 
 #web_title.scrolled {
@@ -278,6 +279,7 @@ header {
 	padding: 1rem;
 	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .5));
 	border: 2px solid white;
+	font-size: 5rem;
 	border-image:
 		linear-gradient(to right, rgba(0, 0, 0, 0),
 			white,
