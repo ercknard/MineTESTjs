@@ -339,6 +339,7 @@ header {
 }
 
 .cave {
+	position: relative;
     width: 100vw;
 	height: auto;
 	-webkit-animation: cave-anim 5s infinite;
@@ -347,7 +348,7 @@ header {
 
 @-webkit-keyframes cave-anim {
 	0% {
-		filter: brightness(100%);
+		filter: brightness(200%);
 	}
 
 	90% {
@@ -355,7 +356,7 @@ header {
 	}
 
 	100% {
-		filter: brightness(100%);
+		filter: brightness(200%);
 	}
 }
 
