@@ -218,7 +218,22 @@ header {
 }
 
 .earth-bg {
-	background: linear-gradient(to bottom, black, #3a7fbe);
+	-webkit-animation: earth-bg-anim 10s infinite;
+	animation: earth-bg-anim 10s infinite;
+}
+
+@keyframes earth-bg-anim {
+	0% {
+		background: linear-gradient(to bottom, black, #3a7fbe);
+	}
+
+	90% {
+		background: linear-gradient(to bottom, black, black);
+	}
+
+	100% {
+		background: linear-gradient(to bottom, black, #3a7fbe);
+	}
 }
 
 .bg-cloud {
@@ -279,7 +294,7 @@ header {
 	padding: 1rem;
 	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .5));
 	border: 2px solid white;
-	font-size: 5rem;
+	font-size: 4.5rem;
 	border-image:
 		linear-gradient(to right, rgba(0, 0, 0, 0),
 			white,
@@ -381,6 +396,7 @@ header {
 	top: 65%;
 	left: 0%;
 	width: 10%;
+	transition: 1s ease-in-out;
 }
 
   #npc-text {
@@ -389,10 +405,18 @@ header {
 	left: 10%;
 	z-index: 9999;
 	font-size: 2rem;
-	color:black;
+	color:white;
+	border: 1px solid white;
 	padding: .5rem;
 	padding-left: 5rem;
-	background-color: #fff;
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
 	-webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
 	clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
+	transition: 1s ease-in-out 1s;
+  }
+
+  .npc {
+	width: 10px;
   }
