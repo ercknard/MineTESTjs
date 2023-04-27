@@ -68,8 +68,23 @@ section img {
 }
 
 section img#sun{
-	filter: drop-shadow(1px 1px 75px rgba(255, 255, 255, 1));
+	-webkit-animation: sun-anim 15s infinite;
+	animation: sun-anim 15s infinite;
 	z-index: 0;
+}
+
+@-webkit-keyframes sun-anim {
+	0% {
+		filter: drop-shadow(1px 1px 75px rgba(255, 255, 255, 1));
+	}
+
+	50% {
+		filter: drop-shadow(1px 1px 200px rgba(255, 255, 255, 1));
+	}
+
+	100% {
+		filter: drop-shadow(1px 1px 75px rgba(255, 255, 255, 1));
+	}
 }
 
 .sec {
