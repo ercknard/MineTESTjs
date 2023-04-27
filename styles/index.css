@@ -284,6 +284,7 @@ header {
 		linear-gradient(to right, rgba(0, 0, 0, 0),
 			white,
 			rgba(0, 0, 0, 0)) 1;
+			color: #fff;
 }
 
 /* .to-divide {
