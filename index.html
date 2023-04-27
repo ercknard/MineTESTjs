@@ -2,7 +2,7 @@
 <html lang="en-US">
    <head>
       <title>CryptechTest</title>
-      <link rel="icon" type="image/x-icon" href="images/pack.webp">
+      <link rel="icon" type="image/x-icon" href="images/pack.png">
       <meta charset="UTF-8">
       <meta name="description" content="">
       <meta name="keywords" content="Minecraft, Cryptocurrency, BTC, ETH, MRX, SEND, OHMC, SCC">
@@ -46,19 +46,25 @@
          .
       </div>
       <section class="earth-bg">
+         <!-- <img class="bg-cloud" src="images/cloud10.png"> -->
+         <img src="images/pepe.webp" id="pepe-bg">
+         <img class="bg-img" src="images/BG-B.webp" id="back-bg">
+         <img src="images/SUN.webp" id="sun">
+         <img class="cloudI clouds" src="images/cloud.webp" id="cloudI">
+         <img class="bg-img" src="images/BG-M.webp" id="mid-bg">
+         <img class="bg-img" src="images/BG-F.webp" id="front-bg">
+         <h1 id="web_title"> Welcome to CryptechTest </h1>
+      </section>
+
+      <div id="pepe">
+         <img class="pepe" src="images/pepe-land.png">
          <div class="npc">
             <img src="images/pepe-land.png" id="pepe-land">
             <p id="npc-text">Hello, adventurer!</p>
          </div>
-         <img class="bg-cloud" src="images/cloud10.png">
-         <img src="images/pepe.webp" id="pepe-bg">
-         <img src="images/BG-B.webp" id="back-bg">
-         <img src="images/SUN.webp" id="sun">
-         <img class="cloudI clouds" src="images/cloud.webp" id="cloudI">
-         <img src="images/BG-M.webp" id="mid-bg">
-         <img src="images/BG-F.webp" id="front-bg">
-         <h1 id="web_title"> Welcome to CryptechTest</h1>
-      </section>
+      </div>
+
+
       <div class="sec">
          <h2><span class="typed-text"></span><span class="cursor typing">.</span></h2>
          <p>
@@ -152,10 +158,10 @@
       window.addEventListener('scroll',function(){
           let value = window.scrollY;
           front_bg.style.top = value * 0.20 + 'px';
-          mid_bg.style.top = value * 0.40 + 'px';
+          mid_bg.style.top = value * 0.30 + 'px';
         //   sun.style.top = value * .5 + 'px';
           cloudI.style.left = value * .5 + 'px';
-          back_bg.style.top = value * 0.60 + 'px';
+          back_bg.style.top = value * 0.40 + 'px';
       })
    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
