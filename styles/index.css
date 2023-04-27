@@ -447,12 +447,12 @@ header {
 	}
 
 	50% {
-		transform: rotate(360deg) translateY(100px);
+		transform: rotate(360deg) translateY(75px);
 	}
 
 	100% {
 		left: 100vw;
-		transform: rotate(360deg) translateY(50px);
+		transform: rotate(360deg) translateY(35px);
 	}
 }
 
