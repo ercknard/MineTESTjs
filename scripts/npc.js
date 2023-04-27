@@ -14,7 +14,7 @@ function talk() {
       if (index >= messages.length) {
         index = 0;
       }
-    }, 3000);
+    }, 5000);
   }
   
   talk();
