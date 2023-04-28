@@ -11,6 +11,8 @@
       <link rel="stylesheet" type="text/css" href="styles/index.css">
       <link rel="stylesheet" type="text/css" href="styles/loader.css">
       <link rel="stylesheet" type="text/css" href="styles/fireflies.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    </head>
    <header>
       <div class="index-navigation">
@@ -75,7 +77,7 @@
       <div id="pepe">
          <img class="pepe" src="images/pepe-land.png">
          <div class="npc">
-            <img src="images/pepe-land.png" id="pepe-land">
+            <img data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="1000" src="images/pepe-land.png" id="pepe-land">
             <p id="npc-text">Hello, adventurer!</p>
          </div>
       </div>
@@ -83,7 +85,7 @@
 
       <div class="sec">
          <h2><span class="typed-text"></span><span class="cursor typing">.</span></h2>
-         <p>
+         <p data-aos="zoom-out-right">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero enim sed faucibus turpis in eu mi bibendum neque. Tristique senectus et netus et malesuada fames. Mi quis hendrerit dolor magna eget est lorem. Interdum velit laoreet id donec ultrices tincidunt. Odio ut enim blandit volutpat maecenas volutpat blandit. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Sed arcu non odio euismod lacinia. Nullam non nisi est sit amet. Nam aliquam sem et tortor consequat id. Morbi non arcu risus quis varius quam. Justo laoreet sit amet cursus sit amet. Volutpat sed cras ornare arcu dui vivamus.
             Nec sagittis aliquam malesuada bibendum. Ullamcorper eget nulla facilisi etiam dignissim diam quis. Tellus mauris a diam maecenas sed enim. Turpis egestas integer eget aliquet nibh praesent tristique magna. Vitae tortor condimentum lacinia quis vel eros. Volutpat est velit egestas dui id ornare arcu. Nisl nunc mi ipsum faucibus vitae. Non nisi est sit amet. Sit amet nisl suscipit adipiscing bibendum est ultricies integer. Elementum pulvinar etiam non quam lacus suspendisse faucibus. In nibh mauris cursus mattis molestie. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Lectus mauris ultrices eros in cursus. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Sit amet nulla facilisi morbi. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Lacus vel facilisis volutpat est. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt.
             Integer vitae justo eget magna fermentum iaculis. Gravida cum sociis natoque penatibus et magnis dis parturient montes. Tellus pellentesque eu tincidunt tortor. Ultricies tristique nulla aliquet enim tortor at auctor. Varius duis at consectetur lorem donec massa sapien faucibus. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Pellentesque habitant morbi tristique senectus. Blandit massa enim nec dui nunc. Sem integer vitae justo eget magna fermentum iaculis eu. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant.
@@ -197,6 +199,10 @@
 <div class="firefly"></div>
 <div class="firefly"></div>
 <div class="firefly"></div>
+
+<script>
+   AOS.init();
+ </script>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
