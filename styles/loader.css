@@ -75,7 +75,7 @@ img.vert-move-6 {
     animation: text-motion 10s infinite;
 }
 
-.fadess {
+.fades {
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .5, visibility 1s;
