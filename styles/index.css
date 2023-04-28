@@ -44,7 +44,7 @@ section {
     justify-content: center;
     align-items: center;
 	overflow: hidden;
-	border-bottom:1px solid white;
+	border-bottom:3px solid white;
 }
 
 section::before {
@@ -92,7 +92,7 @@ section img#sun{
 	background: linear-gradient(to bottom, #3b6718, #2d5472, transparent);
 	padding: 50px;
 	z-index: 3;
-	border-top: 1px solid white;
+	border-top: 3px solid white;
 	overflow: hidden;
 }
 
