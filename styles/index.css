@@ -90,10 +90,11 @@ section img#sun{
 .sec {
     position: relative;
 	background: linear-gradient(to bottom, #3b6718, #2d5472, transparent);
-	padding: 50px;
+	padding: 1rem 0;
 	z-index: 3;
 	border-top: 3px solid white;
 	overflow: hidden;
+	text-align: justify;
 }
 
 .sec h2 {
