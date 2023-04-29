@@ -90,7 +90,7 @@ body {
 
 .sec {
     position: relative;
-	background: linear-gradient(180deg, rgba(19, 15, 20, 1), transparent, #60b4f4);
+	background: linear-gradient(180deg, transparent, transparent, #60b4f4);
 	padding-top: 1rem;
 	z-index: 3;
 	border-top: 3px solid white;
