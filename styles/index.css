@@ -233,6 +233,22 @@ header {
 	}
 }
 
+@-webkit-keyframes clouds-anim-earth {
+	0% {
+		transform: translateY(0px) translateX(20px);
+		opacity: 30%;
+	}
+
+	90% {
+		opacity: 100%;
+	}
+
+	100% {
+		transform: translateY(25px) translateX(-500px);
+		opacity: 30%;
+	}
+}
+
 @-webkit-keyframes main-clouds-anim {
 	0% {
 		transform: translateX(20px);
@@ -259,6 +275,12 @@ header {
 .clouds {
 	-webkit-animation: main-clouds-anim 30s infinite;
 	animation: main-clouds-anim 30s infinite;
+	position: absolute;
+}
+
+.clouds-earth {
+	-webkit-animation: clouds-anim-earth 30s infinite;
+	animation: clouds-anim-earth 30s infinite;
 	position: absolute;
 }
 
