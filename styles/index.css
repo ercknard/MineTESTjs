@@ -315,7 +315,9 @@ header {
 
 .main-footer {
 	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
-	background-color: transparent;
+	background-image: url('/images/footer.jpg');
+	background-size: 200px;
+
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
