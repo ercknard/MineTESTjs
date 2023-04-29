@@ -99,14 +99,22 @@ body {
 }
 
 .sec h2 {
-    font-family: Minecraftmainfont, Garamond, serif;
+    font-family: Minecraftsubfont, Garamond, serif;
     font-size: 3.5em;
     color: #fff;
+}
+
+.sec h3 {
+    font-family: Minecraftsubfont, Garamond, serif;
+    font-size: 2.5em;
+    color: #fff;
+	margin-bottom: 5px;
 }
 
 .sec p {
     font-size: 1.5em;
     color: #fff;
+	text-indent: 50px;
 }
 
 .nav-buttons {
@@ -533,4 +541,12 @@ svg {
 		left: 0;
 		right: 0;
 		text-align: center;
+}
+
+.agent {
+	display: flex;
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+	gap: 1rem;
 }
