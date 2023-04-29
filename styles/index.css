@@ -433,15 +433,18 @@ header {
 	position: relative;
 	overflow: hidden;
 	height: 200px;
-	background-color: #313338;
+	background-image: url('/images/Glass_Pane.png');
+	background-size: 200px;
+	background-position: center;
   }
 
   .pepe {
-	position: relative;
+	position: absolute;
 	width: 200px;
-	-webkit-animation: cave-anim 10s infinite;
+	-webkit-animation: pepe-cave-anim 10s infinite;
 	animation: pepe-cave-anim 10s infinite;
 	overflow: hidden;
+	z-index: -1;
 }
 
 @-webkit-keyframes pepe-cave-anim {
