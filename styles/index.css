@@ -36,7 +36,7 @@ body {
 }
 
 
-section {
+.earth-bg {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -45,9 +45,10 @@ section {
     align-items: center;
 	overflow: hidden;
 	border-bottom:3px solid white;
+	background: linear-gradient(to bottom, black, #5fa9f8);
 }
 
-section::before {
+.earth-bg::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -57,7 +58,7 @@ section::before {
     z-index: 8;
 }
 
-section img {
+.earth-bg img {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +68,7 @@ section img {
 	z-index: 2;
 }
 
-section img#sun{
+.earth-bg img#sun{
 	-webkit-animation: sun-anim 15s infinite;
 	animation: sun-anim 15s infinite;
 	z-index: 0;
@@ -89,7 +90,7 @@ section img#sun{
 
 .sec {
     position: relative;
-	background: linear-gradient(to bottom, #3b6718, #2d5472, transparent);
+	background: linear-gradient(to bottom, transparent, #2d5472, transparent);
 	padding: 1rem 0;
 	z-index: 3;
 	border-top: 3px solid white;
@@ -241,10 +242,6 @@ header {
 	}
 }
 
-.earth-bg {
-	background: linear-gradient(to bottom, black, #5fa9f8);
-}
-
 .bg-cloud {
 	opacity: 10%;
 	-webkit-animation: clouds-anim 30s infinite;
@@ -320,7 +317,6 @@ header {
 .main-footer {
 	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)); */
 	background-color: black;
-	border-top: 1px solid #3b6718;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
@@ -521,4 +517,23 @@ svg {
 
 @keyframes stroke-offset{
   100% {stroke-dashoffset: -35%;}
+}
+
+.the-ship {
+    position: relative;
+    width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+
+.ship {
+		position: absolute;
+		width: 50vh;
+		height: auto;
+		z-index: 2;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
 }
