@@ -441,7 +441,7 @@ header {
 	z-index: 9999;
 	top: 0%;
 	left: 0%;
-	width: 10vw;
+	width: 9vw;
 	transition: 1s ease-in-out;
 	/* background-color: #cfcfea;
 	background-color: #313338;
@@ -451,11 +451,11 @@ header {
   #npc-text {
 	position: absolute;
 	bottom: 50%;
-	left: 10%;
+	left: 9vw;
 	z-index: 9999;
 	font-size: 1.3rem;
 	color:black;
-	padding: .5rem;
+	padding: .25rem;
 	padding-left: 5rem;
 	backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
