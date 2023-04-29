@@ -245,16 +245,16 @@ header {
 @-webkit-keyframes clouds-anim-earth {
 	0% {
 		transform: translateY(0px) translateX(20px);
-		opacity: 30%;
+		opacity: 0%;
 	}
 
 	90% {
-		opacity: 100%;
+		opacity: 50%;
 	}
 
 	100% {
 		transform: translateY(25px) translateX(-500px);
-		opacity: 30%;
+		opacity: 0%;
 	}
 }
 
@@ -432,7 +432,8 @@ header {
 	left: 0%;
 	width: 10%;
 	transition: 1s ease-in-out;
-	/* background-color: #313338;
+	/* background-color: #cfcfea;
+	background-color: #313338;
 	border-right: 3px solid white; */
 }
 
@@ -465,8 +466,9 @@ header {
 	position: relative;
 	overflow: hidden;
 	height: 12.5rem;
-	background-image: url('/images/Iron_bar.png');
-	background-size: 12.5rem;
+	background-image: url('/images/Glass_Pane.png');
+	background-color: rgba(59, 59, 59,.5);
+	background-size: 15rem;
 	background-position: center;
   }
 
