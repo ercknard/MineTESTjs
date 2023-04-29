@@ -402,6 +402,8 @@ header {
 	left: 0%;
 	width: 10%;
 	transition: 1s ease-in-out;
+	/* background-color: #313338;
+	border-right: 3px solid white; */
 }
 
   #npc-text {
@@ -410,16 +412,16 @@ header {
 	left: 10%;
 	z-index: 9999;
 	font-size: 2rem;
-	color:white;
-	border: 1px solid white;
+	color:black;
 	padding: .5rem;
 	padding-left: 5rem;
 	backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: #c3c3c9;
 	-webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
 	clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
-	transition: 1s ease-in-out 1s;
+	transition: .5s ease-in-out 1s;
+	border: 5px solid #a2a2a7;
   }
 
   .npc {
@@ -433,7 +435,7 @@ header {
 	position: relative;
 	overflow: hidden;
 	height: 200px;
-	background-image: url('/images/Glass_Pane.png');
+	background-image: url('/images/Iron_bar.png');
 	background-size: 200px;
 	background-position: center;
   }
