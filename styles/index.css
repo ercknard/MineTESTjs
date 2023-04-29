@@ -90,12 +90,21 @@ body {
 
 .sec {
     position: relative;
-	background: linear-gradient(to bottom, transparent, #60b4f4);
+	background: linear-gradient(180deg, transparent, transparent, #60b4f4);
 	padding-top: 1rem;
 	z-index: 3;
 	border-top: 3px solid white;
 	overflow: hidden;
 	text-align: justify;
+	background-size: 150% 150%;
+	-webkit-animation: sec-bg 30s infinite;
+	animation: sec-bg 30s infinite;
+}
+
+@keyframes sec-bg {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
 }
 
 .sec h2 {
