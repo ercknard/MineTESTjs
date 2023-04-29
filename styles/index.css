@@ -441,7 +441,7 @@ header {
 	z-index: 9999;
 	top: 0%;
 	left: 0%;
-	width: 10%;
+	width: 10vw;
 	transition: 1s ease-in-out;
 	/* background-color: #cfcfea;
 	background-color: #313338;
@@ -476,16 +476,16 @@ header {
   #pepe {
 	position: relative;
 	overflow: hidden;
-	height: 12.5rem;
+	height: 12.5vh;
 	background-image: url('/images/Glass_Pane.png');
 	background-color: rgba(59, 59, 59,.5);
-	background-size: 15rem;
+	background-size: 15vh;
 	background-position: center;
   }
 
   .pepe {
 	position: absolute;
-	width: 12.5rem;
+	width: 12.5vh;
 	-webkit-animation: pepe-cave-anim 10s infinite;
 	animation: pepe-cave-anim 10s infinite;
 	overflow: hidden;
@@ -571,13 +571,13 @@ svg {
 .the-ship {
     position: relative;
     width: 100%;
-	height: 50vh;
+	height: 60vh;
 	overflow: hidden;
 }
 
 .ship {
 		position: absolute;
-		width: 50vh;
+		width: 60vh;
 		height: auto;
 		z-index: 2;
 		margin-left: auto;
