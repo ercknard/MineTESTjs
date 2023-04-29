@@ -478,7 +478,7 @@ header {
 	overflow: hidden;
 	height: 12.5vh;
 	background-image: url('/images/Glass_Pane.png');
-	background-color: rgba(59, 59, 59,.5);
+	background-color: rgba(255, 255, 255,.1);
 	background-size: 15vh;
 	background-position: center;
   }
