@@ -439,9 +439,9 @@ header {
 #pepe-land {
 	position: absolute;
 	z-index: 9999;
-	top: 0%;
+	top: -10%;
 	left: 0%;
-	width: 9vw;
+	width: 10vw;
 	transition: 1s ease-in-out;
 	/* background-color: #cfcfea;
 	background-color: #313338;
