@@ -132,6 +132,13 @@ body {
 	margin-bottom: 5px;
 }
 
+.sec h4 {
+    font-family: Minecraftsubfont, Garamond, serif;
+    font-size: 1.5em;
+    color: #fff;
+	margin-bottom: 5px;
+}
+
 .sec p {
     font-size: 1.5em;
     color: #fff;
@@ -596,3 +603,25 @@ svg {
 	gap: 1rem;
 	margin-bottom: 1rem;
 }
+
+.agent-home {
+	display: flex;
+	text-align: center;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+}
+
+.banner {
+	background-color: #000;
+	padding-bottom: 1rem;
+	backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
