@@ -608,7 +608,7 @@ svg {
 .agent-home {
 	display: flex;
 	text-align: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	gap: 1rem;
 	margin-bottom: 1rem;
