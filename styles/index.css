@@ -684,3 +684,36 @@ svg {
 	border-top: 5px solid rgb(161, 108, 79);
 }
 
+.width-class-90 {
+	width: 90%;
+	margin-left: auto;
+	padding: 1.5rem;
+	-webkit-animation: forborder 30s infinite ease-in-out;
+	animation: forborder 30s infinite ease-in-out;
+}
+
+@-webkit-keyframes forborder {
+	0% {
+		border-left: 1px solid transparent;
+	}
+
+	90% {
+		border-left: 1px solid white;
+	}
+
+	100% {
+		border-left: 1px solid transparent;
+	}
+}
+
+.width-class-45 {
+	justify-content: center;
+	border-left: 1px solid transparent;
+}
+
+.landing-pepe {
+	position: absolute;
+	width: 10rem;
+	text-align: center;
+}
+
