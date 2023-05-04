@@ -688,7 +688,11 @@ svg {
 	width: 90%;
 	margin-left: auto;
 	padding: 1.5rem;
-	-webkit-animation: forborder 30s infinite ease-in-out;
+    background-color: rgba(17, 25, 40, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+	/* -webkit-animation: forborder 30s infinite ease-in-out;
 	animation: forborder 30s infinite ease-in-out;
 }
 
@@ -704,11 +708,10 @@ svg {
 	100% {
 		border-left: 1px solid transparent;
 	}
-}
+} */
 
 .width-class-45 {
 	justify-content: center;
-	border-left: 1px solid transparent;
 }
 
 .landing-pepe {
