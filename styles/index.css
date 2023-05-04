@@ -628,7 +628,6 @@ svg {
 
 .banner:hover {
 	transform: translateY(5px);
-	border-top: 5px solid white;
 	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	transform: scale(1.2);
@@ -662,21 +661,26 @@ svg {
 
 .squid-color:hover {
 	background-image: linear-gradient(to top, rgb(134, 134, 69) , transparent);
+	border-top: 5px solid rgb(134, 134, 69);
 }
 
 .seqsee-color:hover {
 	background-image: linear-gradient(to top, rgb(183, 112, 173) , transparent);
+	border-top: 5px solid rgb(183, 112, 173);
 }
 
 .vanikoro-color:hover {
 	background-image: linear-gradient(to top, rgb(195, 195, 202) , transparent);
+	border-top: 5px solid rgb(195, 195, 202);
 }
 
 .kyuhi-color:hover {
 	background-image: linear-gradient(to top, rgb(97, 105, 207) , transparent);
+	border-top: 5px solid rgb(97, 105, 207);
 }
 
 .shikoku-color:hover {
 	background-image: linear-gradient(to top, rgb(161, 108, 79) , transparent);
+	border-top: 5px solid rgb(161, 108, 79);
 }
 
