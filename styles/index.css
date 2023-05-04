@@ -608,9 +608,7 @@ svg {
 .agent-home {
 	display: flex;
 	text-align: center;
-	justify-content: space-around;
 	align-items: center;
-	gap: 1rem;
 	margin-bottom: 1rem;
 	flex-wrap: wrap;
 	margin: 1rem 0;
@@ -618,6 +616,9 @@ svg {
 
 .banner {
 	padding-bottom: 1rem;
+	-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	background-color: #000;
 }
 
 .banner:hover {
