@@ -90,7 +90,8 @@ body {
 
 .sec {
     position: relative;
-	background: linear-gradient(180deg, transparent, transparent, #60b4f4), url(/images/sky-loader-for-sec.png);
+	/* background: linear-gradient(180deg, transparent, transparent, #60b4f4), url(/images/sky-loader-for-sec.png); */
+	background: linear-gradient(180deg, transparent, transparent, #60b4f4);
 	background-size: contain;
 	padding-top: 1rem;
 	z-index: 3;
@@ -609,19 +610,73 @@ svg {
 	display: flex;
 	text-align: center;
 	align-items: center;
+	justify-content: space-evenly;
 	margin-bottom: 1rem;
 	flex-wrap: wrap;
 	margin: 1rem 0;
 }
 
 .banner {
-	padding-bottom: 1rem;
-	-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-	background-color: #000;
+	-webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+	clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+	backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: transparent;
+	border-top: 2.5px solid rgba(255, 255, 255, .5);
+	transition: .5s ease-in-out;
 }
 
 .banner:hover {
 	transform: translateY(5px);
+	border-top: 5px solid white;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	transform: scale(1.2);
+	border-radius: 10px;
+}
+
+.squid-color {
+	background-image: linear-gradient(to top, rgb(134, 134, 69) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.seqsee-color {
+	background-image: linear-gradient(to top, rgb(183, 112, 173) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.vanikoro-color {
+	background-image: linear-gradient(to top, rgb(195, 195, 202) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.kyuhi-color {
+	background-image: linear-gradient(to top, rgb(97, 105, 207) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.shikoku-color {
+	background-image: linear-gradient(to top, rgb(161, 108, 79) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.squid-color:hover {
+	background-image: linear-gradient(to top, rgb(134, 134, 69) , transparent);
+}
+
+.seqsee-color:hover {
+	background-image: linear-gradient(to top, rgb(183, 112, 173) , transparent);
+}
+
+.vanikoro-color:hover {
+	background-image: linear-gradient(to top, rgb(195, 195, 202) , transparent);
+}
+
+.kyuhi-color:hover {
+	background-image: linear-gradient(to top, rgb(97, 105, 207) , transparent);
+}
+
+.shikoku-color:hover {
+	background-image: linear-gradient(to top, rgb(161, 108, 79) , transparent);
 }
 
