@@ -3,7 +3,7 @@ let mid_bg = document.getElementById('mid-bg');
  let sun = document.getElementById('sun');
 let cloudI = document.getElementById('cloudI');
 let back_bg = document.getElementById('back-bg');
-let pepe = document.getElementById('pepe-landing');
+// let pepe = document.getElementById('pepe-landing');
 
 window.addEventListener('scroll',function(){
     let value = window.scrollY;
@@ -12,5 +12,5 @@ window.addEventListener('scroll',function(){
     sun.style.top = value * .4 + 'px';
     cloudI.style.left = value * .5 + 'px';
     back_bg.style.top = value * 0.40 + 'px';
-    pepe.style.top = value * .65 + 'px';
+    // pepe.style.top = value * .65 + 'px';
 })
