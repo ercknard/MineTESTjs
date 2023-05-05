@@ -726,3 +726,9 @@ svg {
 	text-align: center;
 }
 
+.container-main {
+	background-color: black;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding: 2rem 0;
+}
