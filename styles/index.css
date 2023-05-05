@@ -626,14 +626,14 @@ svg {
     background-color: transparent;
 	border-top: 2.5px solid rgba(255, 255, 255, .5);
 	transition: .5s ease-in-out;
-	width: 20%;
+	width: 17.5%;
 }
 
 .banner:hover {
 	transform: translateY(5px);
 	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	transform: scale(1.2);
+	transform: scale(1.1);
 	border-radius: 10px;
 	z-index: 10;
 }
@@ -744,4 +744,57 @@ svg {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover; */
+}
+
+.leads-portrait {
+	padding: 1rem;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 50vh;
+	height: auto;
+	text-align: center;
+}
+
+.fade {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.active-leads {
+	transform: translateY(5px);
+	transform: scale(1.1);
+	border-radius: 10px;
+	z-index: 10;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.donate-prompt {
+	margin: 1rem;
+	text-align: center;
 }
