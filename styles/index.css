@@ -621,8 +621,8 @@ svg {
 .banner {
 	-webkit-clip-path: polygon(0 0%, 95% 0, 100% 100%, 5% 100%);
 	clip-path: polygon(0 0%, 95% 0, 100% 100%, 5% 100%);
-	backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+	/* backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); */
     background-color: transparent;
 	border-top: 2.5px solid rgba(255, 255, 255, .5);
 	transition: .5s ease-in-out;
