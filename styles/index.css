@@ -619,10 +619,10 @@ svg {
 }
 
 .banner {
-	-webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-	clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-	backdrop-filter: blur(5px) saturate(180%);
-    -webkit-backdrop-filter: blur(5px) saturate(180%);
+	-webkit-clip-path: polygon(0 0%, 95% 0, 100% 100%, 5% 100%);
+	clip-path: polygon(0 0%, 95% 0, 100% 100%, 5% 100%);
+	backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     background-color: transparent;
 	border-top: 2.5px solid rgba(255, 255, 255, .5);
 	transition: .5s ease-in-out;
@@ -732,7 +732,7 @@ svg {
 	border-bottom: 1px solid white;
 	padding: 2rem 0;
 	box-shadow: 1px 1px 25px white;
-	background: linear-gradient(45deg, rgba(104, 104, 104, .5) 0%, black 15%, transparent 50%), linear-gradient(-135deg, rgba(104, 104, 104, .5) 0%, black 15%, transparent 50%)
+	background: linear-gradient(45deg, rgba(104, 104, 104, .3) 0%, black 15%, transparent 50%), linear-gradient(-135deg, rgba(104, 104, 104, .3) 0%, black 15%, transparent 50%);
 }
 
 .main-text {
