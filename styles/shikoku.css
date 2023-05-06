@@ -1,5 +1,6 @@
 @import url("fireflies.css");
 @import url("loader.css");
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 
 :root {
     --kyuhi: rgba(161, 108, 79);
