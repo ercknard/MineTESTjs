@@ -1,3 +1,6 @@
+@import url("fireflies.css");
+@import url("loader.css");
+
 :root {
     --kyuhi: rgba(134, 134, 69);
   }

@@ -1,3 +1,6 @@
+@import url("fireflies.css");
+@import url("loader.css");
+
 @font-face {
 	font-family: Minecraftmainfont;
 	src: url(/font/Minetest\ Font.ttf);
