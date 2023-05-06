@@ -615,7 +615,7 @@ svg {
 	justify-content: space-evenly;
 	margin-bottom: 1rem;
 	flex-wrap: wrap;
-	margin: 1rem 0;
+	margin: 1.5rem 0;
 }
 
 .banner {
@@ -747,14 +747,7 @@ svg {
 }
 
 .leads-portrait {
-	display: block;
-	padding: 1rem;
-	height: auto;
-	text-align: center;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+	width: 30vh;
 }
 
 .fade {
@@ -784,6 +777,12 @@ svg {
 	100% {
 		opacity: 1;
 	}
+}
+
+.squid {
+	-webkit-animation: squid .85s infinite alternate;
+	animation: squid .85s infinite alternate;
+	filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 1));
 }
 
 .active-leads {
@@ -820,4 +819,25 @@ svg {
 .donate-prompt {
 	margin: 1rem;
 	text-align: center;
+}
+
+.to-flex {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leads-photo {
+	display: block;
+	padding: 1rem;
+	border: 3px solid white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
 }
