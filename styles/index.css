@@ -583,13 +583,13 @@ svg {
 .the-ship {
     position: relative;
     width: 100%;
-	height: 60vh;
+	height: 50vh;
 	overflow: hidden;
 }
 
 .ship {
 		position: absolute;
-		width: 60vh;
+		width: 50vh;
 		height: auto;
 		z-index: 2;
 		margin-left: auto;
@@ -615,7 +615,7 @@ svg {
 	justify-content: space-evenly;
 	margin-bottom: 1rem;
 	flex-wrap: wrap;
-	margin: 1.5rem 0;
+	margin: 2rem 0;
 }
 
 .banner {
@@ -747,7 +747,7 @@ svg {
 }
 
 .leads-portrait {
-	width: 30vh;
+	width: 25vh;
 }
 
 .fade {
@@ -840,4 +840,5 @@ svg {
 	margin-bottom: 1rem;
 	margin-left: auto;
 	margin-right: auto;
+	width: 25%;
 }
