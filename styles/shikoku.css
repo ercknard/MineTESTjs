@@ -1,4 +1,8 @@
-@font-face {
+:root {
+    --kyuhi: rgba(161, 108, 79);
+  }
+
+  @font-face {
 	font-family: Minecraftmainfont;
 	src: url(/font/Minetest\ Font.ttf);
 }
@@ -44,7 +48,7 @@ body {
     justify-content: center;
     align-items: center;
 	overflow: hidden;
-	border-bottom:3px solid white;
+	border-bottom:3px solid var(--kyuhi);
 	background: linear-gradient(to bottom, black, #5fa9f8);
 }
 
@@ -54,7 +58,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, rgba(255,255,255, .1), transparent);
+    background: linear-gradient(to top, rgba(161, 108, 79, .1), transparent);
     z-index: 8;
 }
 
@@ -91,11 +95,11 @@ body {
 .sec {
     position: relative;
 	/* background: linear-gradient(180deg, transparent, transparent, #60b4f4), url(/images/sky-loader-for-sec.png); */
-	background: linear-gradient(180deg, rgba(255, 255, 255, .05) , transparent, rgba(96, 180, 244, .75));
+	background: linear-gradient(180deg, rgba(255, 255, 255, .05) , transparent , rgba(161, 108, 79, .3));
 	background-size: contain;
 	padding-top: 1rem;
 	z-index: 3;
-	border-top: 3px solid white;
+	border-top: 3px solid var(--kyuhi);
 	overflow: hidden;
 	text-align: justify;
 	background-size: 150% 150%;
@@ -234,7 +238,7 @@ header {
 
 .index-navigation.scrolled {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) !important;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid var(--kyuhi);
 }
 
 .index-logo {
@@ -360,11 +364,11 @@ header {
 	text-align: center;
 	padding: 1rem;
 	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .5));
-	border: 2px solid white;
+	border: 2px solid var(--kyuhi);
 	font-size: 4.5rem;
 	border-image:
 		linear-gradient(to right, rgba(0, 0, 0, 0),
-			white,
+        var(--kyuhi),
 			rgba(0, 0, 0, 0)) 1;
 			color: #fff;
 }
@@ -492,7 +496,7 @@ header {
 	background-color: rgba(255, 255, 255,.1);
 	background-size: 15vh;
 	background-position: center;
-	box-shadow: 1px 1px 25px white;
+	box-shadow: 1px 1px 25px var(--kyuhi);
   }
 
   .pepe {
@@ -728,11 +732,11 @@ svg {
 }
 
 .container-main {
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
+	border-top: 1px solid var(--kyuhi);
+	border-bottom: 1px solid var(--kyuhi);
 	padding: 2rem 0;
-	box-shadow: 1px 1px 25px white;
-	background: linear-gradient(45deg, rgba(104, 104, 104, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(104, 104, 104, .3) 0%, black 10%, transparent 50%);
+	box-shadow: 1px 1px 25px var(--kyuhi);
+	background: linear-gradient(45deg, rgba(161, 108, 79, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(161, 108, 79, .3) 0%, black 10%, transparent 50%);
 }
 
 .main-text {
@@ -832,7 +836,7 @@ svg {
 .leads-photo {
 	display: block;
 	padding: 1rem;
-	border: 3px solid white;
+	border: 3px solid var(--kyuhi);
 	border-radius: 50%;
 	border-left: none;
 	border-bottom: none;
