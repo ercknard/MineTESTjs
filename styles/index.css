@@ -842,3 +842,36 @@ svg {
 	margin-right: auto;
 	width: 25%;
 }
+
+.pepe-admin {
+	position: absolute;
+	width: 12.5vh;
+	-webkit-animation: pepe-cave-anim 10s infinite;
+	animation: pepe-cave-anim 10s infinite;
+	z-index: -1;
+}
+
+.width-class-admin {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+@media (max-width: 1920px) {
+	.width-class-admin {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1600px) {
+	.width-class-admin {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+}
