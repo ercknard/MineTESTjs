@@ -248,3 +248,32 @@ img.vert-move-6 {
 .default {
 	width: 3rem;
 }
+
+.story-button {
+	display: block;
+	border: .5px solid white;
+	border-radius: 5px;
+	padding: 1.2rem 3rem;
+	background-image: linear-gradient(to right,rgba(0, 0, 0, 1), var(--kyuhi) , rgba(0, 0, 0, 1));
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-shadow: -2px 2px 4px 
+	rgba(0, 0, 0, 0.5), 
+	2px -2px 0 
+	rgba(255, 255, 255, 0.5);
+	-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1));
+	cursor: pointer;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+.story-button:hover {
+	transform: translateY(-2px);
+	background-image: linear-gradient(to right,rgba(0, 0, 0, .3), var(--kyuhi), rgba(0, 0, 0, .3));
+}
+
+.a-button {
+	color: #fff;
+	text-decoration: none;
+}

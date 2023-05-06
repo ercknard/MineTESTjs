@@ -2,6 +2,11 @@
 @import url("loader.css");
 @import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 
+:root {
+    --kyuhi: rgba(30, 30, 30);
+  }
+
+
 @font-face {
 	font-family: Minecraftmainfont;
 	src: url(/font/Minetest\ Font.ttf);
