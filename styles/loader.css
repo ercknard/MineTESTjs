@@ -356,6 +356,7 @@ img.vert-move-6 {
 	background: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(135deg, black 0%,  transparent 50%);
 	backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+	border-radius: 5px;
 }
 
 .sky-op {
@@ -366,6 +367,7 @@ img.vert-move-6 {
 	background: linear-gradient(45deg, black 0%, black 10%, transparent 50%), linear-gradient(-135deg, black 0%, transparent 50%);
 	backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+	border-radius: 5px;
 }
 
 .admin-op {
@@ -376,6 +378,7 @@ img.vert-move-6 {
 	background: linear-gradient(45deg, black 0%, black 10%, transparent 50%), linear-gradient(-135deg, black 0%, transparent 50%);
 	backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+	border-radius: 5px;
 }
 
 .radial-effect {
