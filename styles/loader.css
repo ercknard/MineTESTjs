@@ -355,26 +355,26 @@ img.vert-move-6 {
 	
 }
 
-/* .container-main-sky {
-	border-top: 1px solid var(--kyuhi);
+.container-main-sky {
+	/* border-top: 1px solid var(--kyuhi);
 	border-bottom: 1px solid var(--kyuhi);
 	padding: 2rem 0;
 	box-shadow: 1px 1px 25px var(--kyuhi);
-	background-color: black;
+	background-color: black; */
 }
 
 .container-main-admin {
-	border-top: 1px solid var(--kyuhi);
+	/* border-top: 1px solid var(--kyuhi);
 	border-bottom: 1px solid var(--kyuhi);
 	padding: 2rem 0;
 	box-shadow: 1px 1px 25px var(--kyuhi);
-	background-color: black;
+	background-color: black; */
 }
 
 .container-main-world {
-	border-top: 1px solid var(--kyuhi);
+	/* border-top: 1px solid var(--kyuhi);
 	border-bottom: 1px solid var(--kyuhi);
 	padding: 2rem 0;
 	box-shadow: 1px 1px 25px var(--kyuhi);
-	background-color: black;
-} */
+	background-color: black; */
+}
