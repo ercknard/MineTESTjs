@@ -308,3 +308,24 @@ img.vert-move-6 {
 .mod:hover {
 	background-image: linear-gradient(to top, var(--kyuhi), rgba(0, 0, 0, .3), transparent);
 }
+
+.sky-bg {
+	/* background: linear-gradient(45deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), url(/images/sky.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover; */
+}
+
+.world-bg {
+	/* background: linear-gradient(45deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), url(/images/landscape.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover; */
+}
+
+.admins-bg {
+	/* background: linear-gradient(45deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), url(/images/cave.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover; */
+}
