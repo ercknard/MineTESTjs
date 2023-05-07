@@ -412,3 +412,25 @@ img.vert-move-6 {
 #pepe-bg {
 	transform: skewY(5deg);
 }
+
+.pipe {
+	margin-top: 10%;
+	position: absolute;
+	background-image: url(/images/tube_H.png);
+	z-index: 10;
+	width: 80px;
+	height: 75%;
+	overflow: hidden;
+}
+
+.sec-2 {
+	display: flex;
+}
+
+body {
+	height: 100%;
+}
+
+.pipe-padding {
+	padding-left: 2rem;
+}
