@@ -314,6 +314,8 @@ img.vert-move-6 {
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover; */
+	transform: skewY(5deg);
+	margin: 5rem 0;
 }
 
 .world-bg {
@@ -321,6 +323,8 @@ img.vert-move-6 {
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover; */
+	transform: skewY(-5deg);
+	margin: 5rem 0;
 }
 
 .admins-bg {
@@ -328,4 +332,49 @@ img.vert-move-6 {
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover; */
+	transform: skewY(5deg);
+	margin: 5rem 0;
 }
+
+.world-op {
+	transform: skewY(5deg);
+	padding: 3rem 0;
+}
+
+.sky-op {
+	transform: skewY(-5deg);
+	padding: 3rem 0;
+}
+
+.admin-op {
+	transform: skewY(-5deg);
+	padding: 3rem 0;
+}
+
+.radial-effect {
+	
+}
+
+/* .container-main-sky {
+	border-top: 1px solid var(--kyuhi);
+	border-bottom: 1px solid var(--kyuhi);
+	padding: 2rem 0;
+	box-shadow: 1px 1px 25px var(--kyuhi);
+	background-color: black;
+}
+
+.container-main-admin {
+	border-top: 1px solid var(--kyuhi);
+	border-bottom: 1px solid var(--kyuhi);
+	padding: 2rem 0;
+	box-shadow: 1px 1px 25px var(--kyuhi);
+	background-color: black;
+}
+
+.container-main-world {
+	border-top: 1px solid var(--kyuhi);
+	border-bottom: 1px solid var(--kyuhi);
+	padding: 2rem 0;
+	box-shadow: 1px 1px 25px var(--kyuhi);
+	background-color: black;
+} */
