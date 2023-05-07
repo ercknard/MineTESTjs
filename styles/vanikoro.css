@@ -738,8 +738,8 @@ svg {
 }
 
 .container-main {
-	border-top: 1px solid var(--kyuhi);
-	border-bottom: 1px solid var(--kyuhi);
+	border-top: 3px solid var(--kyuhi);
+	border-bottom: 3px solid var(--kyuhi);
 	padding: 2rem 0;
 	box-shadow: 1px 1px 25px var(--kyuhi);
 	background: linear-gradient(45deg, rgba(69, 101, 69, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(69, 101, 69, .3) 0%, black 10%, transparent 50%);
