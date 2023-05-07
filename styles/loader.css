@@ -291,3 +291,16 @@ img.vert-move-6 {
 	margin: 1rem;
 	padding: 5px;
 }
+
+.leads-photo-abs2 {
+	display: block;
+	border: 10px double white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+}
