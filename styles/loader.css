@@ -354,7 +354,10 @@ img.vert-move-6 {
 
 .admin-op {
 	transform: skewY(-5deg);
-	padding: 3rem 0;
+	padding: 3rem 2rem;
+	border: 3px solid var(--kyuhi);
+	box-shadow: 1px 1px 25px var(--kyuhi);
+	background: linear-gradient(45deg, black 0%, black 10%, transparent 50%), linear-gradient(-135deg, black 0%, transparent 50%);
 }
 
 .radial-effect {
