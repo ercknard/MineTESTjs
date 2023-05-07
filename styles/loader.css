@@ -382,6 +382,8 @@ img.vert-move-6 {
 }
 
 .radial-effect {
+
+	/* background: radial-gradient(circle at center, var(--kyuhi) 0%, transparent 40%, transparent 75%); */
 	
 }
 
