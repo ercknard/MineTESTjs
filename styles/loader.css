@@ -421,6 +421,8 @@ img.vert-move-6 {
 	width: 80px;
 	height: 100%;
 	overflow: hidden;
+	-webkit-animation: bones 15s infinite;
+	animation: bones 15s infinite;
 }
 
 .pipe-h {
@@ -441,4 +443,38 @@ body {
 
 .pipe-padding {
 	padding-left: 2rem;
+}
+
+.pipe::after {
+	content: url(/images/cross.png);
+	-webkit-animation: bones 15s infinite;
+	animation: bones 15s infinite;
+}
+
+@-webkit-keyframes bones {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 5%
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+@keyframes bones {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 5%
+	}
+
+	100% {
+		top: 0%
+	}
 }
