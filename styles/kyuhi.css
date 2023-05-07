@@ -54,6 +54,7 @@ body {
 	overflow: hidden;
 	border-bottom:3px solid var(--kyuhi);
 	background: linear-gradient(to bottom, black, #5fa9f8);
+	transform: skewY(-5deg);
 }
 
 .earth-bg::before {
@@ -99,11 +100,11 @@ body {
 .sec {
     position: relative;
 	/* background: linear-gradient(180deg, transparent, transparent, #60b4f4), url(/images/sky-loader-for-sec.png); */
-	background: linear-gradient(180deg, rgba(255, 255, 255, .05) , transparent , rgba(97, 105, 207, .3));
+	background: linear-gradient(180deg, transparent, transparent, rgba(96, 180, 244, .75));
 	background-size: contain;
 	padding-top: 1rem;
 	z-index: 3;
-	border-top: 3px solid var(--kyuhi);
+	border-top: none;
 	overflow: hidden;
 	text-align: justify;
 	background-size: 125% 125%;
@@ -501,6 +502,9 @@ header {
 	background-size: 15vh;
 	background-position: center;
 	box-shadow: 1px 1px 25px var(--kyuhi);
+	transform: skewY(-5deg);
+	border-bottom: 5px solid var(--kyuhi);
+	border-top: 5px solid var(--kyuhi);
   }
 
   .pepe {
