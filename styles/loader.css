@@ -277,3 +277,17 @@ img.vert-move-6 {
 	color: #fff;
 	text-decoration: none;
 }
+
+.leads-photo-abs {
+	position: absolute;
+	left: 0;
+	right: 100%;
+	text-align: center;
+	border: 5px dotted white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	width: 25%;
+	margin: 1rem;
+	padding: 5px;
+}
