@@ -421,7 +421,7 @@ img.vert-move-6 {
 	background-image: url(/images/tube_H.png);
 	z-index: 10;
 	width: 80px;
-	height: 100%;
+	height: 90%;
 	overflow: hidden;
 	-webkit-animation: bones 15s infinite;
 	animation: bones 15s infinite;
@@ -451,8 +451,16 @@ body {
 	padding-left: 2rem;
 }
 
-.pipe::after {
+.pipe::before {
 	content: url(/images/cross.png);
+}
+
+.pipe::after {
+	content: url(/images/pack.webp);
+	position: absolute;
+	left: 0;
+	-webkit-animation: bones-2 30s infinite;
+	animation: bones-2 30s infinite;
 }
 
 @-webkit-keyframes bones {
@@ -476,6 +484,34 @@ body {
 
 	50% {
 		top: 5%
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+@-webkit-keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+@keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
 	}
 
 	100% {
