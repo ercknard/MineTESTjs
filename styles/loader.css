@@ -433,6 +433,10 @@ img.vert-move-6 {
 	overflow: hidden;
 }
 
+.pipe-h::after {
+	content: url(/images/cross-b.png);
+}
+
 .sec-2 {
 	display: flex;
 }
@@ -447,8 +451,6 @@ body {
 
 .pipe::after {
 	content: url(/images/cross.png);
-	-webkit-animation: bones 15s infinite;
-	animation: bones 15s infinite;
 }
 
 @-webkit-keyframes bones {
