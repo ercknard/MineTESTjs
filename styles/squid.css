@@ -53,7 +53,7 @@ body {
     align-items: center;
 	overflow: hidden;
 	border-bottom:3px solid var(--kyuhi);
-	background: linear-gradient(to bottom, black, #5fa9f8);
+	background: linear-gradient(to bottom, transparent, rgb(95, 169, 248, 1));
 	transform: skewY(-5deg);
 }
 
@@ -255,7 +255,7 @@ header {
 	width: 100vw;
 	height: 100vh;
 	color: #fff;
-	z-index: 1;
+	z-index: 0;
 }
 
 @-webkit-keyframes clouds-anim {
