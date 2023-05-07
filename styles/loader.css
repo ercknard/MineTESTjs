@@ -316,6 +316,10 @@ img.vert-move-6 {
 	background-size: cover; */
 	transform: skewY(5deg);
 	margin: 5rem 0;
+	background-image: url(/images/sky.png) !important;
+	background-position: bottom !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
 }
 
 .world-bg {
@@ -325,6 +329,10 @@ img.vert-move-6 {
 	background-size: cover; */
 	transform: skewY(-5deg);
 	margin: 5rem 0;
+	background-image: url(/images/BG-B.webp) !important;
+	background-position: bottom !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
 }
 
 .admins-bg {
@@ -334,6 +342,10 @@ img.vert-move-6 {
 	background-size: cover; */
 	transform: skewY(5deg);
 	margin: 5rem 0;
+	background-image: url(/images/cave.png) !important;
+	background-position: bottom !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
 }
 
 .world-op {
@@ -342,6 +354,8 @@ img.vert-move-6 {
 	border: 3px solid var(--kyuhi);
 	box-shadow: 1px 1px 25px var(--kyuhi);
 	background: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(135deg, black 0%,  transparent 50%);
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 
 .sky-op {
@@ -350,6 +364,8 @@ img.vert-move-6 {
 	border: 3px solid var(--kyuhi);
 	box-shadow: 1px 1px 25px var(--kyuhi);
 	background: linear-gradient(45deg, black 0%, black 10%, transparent 50%), linear-gradient(-135deg, black 0%, transparent 50%);
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 
 .admin-op {
@@ -358,6 +374,8 @@ img.vert-move-6 {
 	border: 3px solid var(--kyuhi);
 	box-shadow: 1px 1px 25px var(--kyuhi);
 	background: linear-gradient(45deg, black 0%, black 10%, transparent 50%), linear-gradient(-135deg, black 0%, transparent 50%);
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 
 .radial-effect {
