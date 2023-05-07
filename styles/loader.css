@@ -304,3 +304,7 @@ img.vert-move-6 {
 	margin-right: auto;
 	width: 35%;
 }
+
+.mod:hover {
+	background-image: linear-gradient(to top, var(--kyuhi), rgba(0, 0, 0, .3), transparent);
+}

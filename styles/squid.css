@@ -628,7 +628,7 @@ svg {
 }
 
 .banner {
-	transform: skewX(2deg);
+	transform: skewY(0deg);
 	/* backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px); */
     background-color: rgba(0, 0, 0, .5);
@@ -639,13 +639,11 @@ svg {
 }
 
 .banner:hover {
-	transform: translateY(5px);
-	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	transform: scale(1.1);
 	border-radius: 10px;
 	z-index: 10;
 }
+
 
 .squid-color {
 	background-image: linear-gradient(to top, rgb(134, 134, 69) , transparent, transparent);
