@@ -884,3 +884,42 @@ svg {
 		width: 100%;
 	}
 }
+
+.pipe::after {
+	content: url("https://cdn.discordapp.com/avatars/178134391216668673/282c991e0442d47142ac89607657e375.webp");
+	position: absolute;
+	left: -2rem;
+	-webkit-animation: bones-2 30s infinite;
+	animation: bones-2 30s infinite;
+	transform: scale(.5);
+	-webkit-clip-path: circle(40% at 50% 50%);
+	clip-path: circle(40% at 50% 50%);
+}
+
+@-webkit-keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+@keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}

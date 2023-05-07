@@ -455,14 +455,6 @@ body {
 	content: url(/images/cross.png);
 }
 
-.pipe::after {
-	content: url(/images/pack.webp);
-	position: absolute;
-	left: 0;
-	-webkit-animation: bones-2 30s infinite;
-	animation: bones-2 30s infinite;
-}
-
 @-webkit-keyframes bones {
 	0% {
 		top: 0;
@@ -484,34 +476,6 @@ body {
 
 	50% {
 		top: 5%
-	}
-
-	100% {
-		top: 0%
-	}
-}
-
-@-webkit-keyframes bones-2 {
-	0% {
-		top: 0;
-	}
-
-	50% {
-		top: 75%;
-	}
-
-	100% {
-		top: 0%
-	}
-}
-
-@keyframes bones-2 {
-	0% {
-		top: 0;
-	}
-
-	50% {
-		top: 75%;
 	}
 
 	100% {

@@ -885,3 +885,42 @@ svg {
 		width: 100%;
 	}
 }
+
+.pipe::after {
+	content: url("https://cdn.discordapp.com/avatars/500376620708659212/8ef05471a811a239c1325a7cffc77c58.webp");
+	position: absolute;
+	left: -2rem;
+	-webkit-animation: bones-2 30s infinite;
+	animation: bones-2 30s infinite;
+	transform: scale(.5);
+	-webkit-clip-path: circle(40% at 50% 50%);
+	clip-path: circle(40% at 50% 50%);
+}
+
+@-webkit-keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+@keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
