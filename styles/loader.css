@@ -622,3 +622,40 @@ body {
 		right: 100%;
 	}
 }
+
+.pipe-right::before {
+	content: url(/images/pack.webp);
+	position: absolute;
+	left: 0;
+	-webkit-animation: bones-2 60s infinite;
+	animation: bones-2 60s infinite;
+	transform: scale(1);
+}
+
+@-webkit-keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+@keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
