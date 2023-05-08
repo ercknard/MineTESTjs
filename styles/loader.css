@@ -427,6 +427,19 @@ img.vert-move-6 {
 	animation: bones 15s infinite;
 }
 
+.pipe-right {
+	margin-top: 0%;
+	position: absolute;
+	background-image: url(/images/tube_H.png);
+	z-index: 0;
+	width: 80px;
+	height: 90%;
+	overflow: hidden;
+	-webkit-animation: bones 30s infinite;
+	animation: bones 30s infinite;
+	right: 15%;
+}
+
 .pipe-h {
 	background-image: url(/images/tube_V.png);
 	z-index: 10;
@@ -438,6 +451,11 @@ img.vert-move-6 {
 .pipe-h::after {
 	content: url(/images/cross-b.png);
 }
+
+.pipe-right::after {
+	content: url(/images/cross.png);
+}
+
 
 .sec-2 {
 	display: flex;

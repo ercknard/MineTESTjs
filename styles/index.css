@@ -893,8 +893,8 @@ svg {
 	left: 0;
 	-webkit-animation: bones-2 30s infinite;
 	animation: bones-2 30s infinite;
-	-webkit-clip-path: circle(40% at 50% 50%);
-	clip-path: circle(40% at 50% 50%);
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
 }
 
 @-webkit-keyframes bones-2 {
