@@ -578,7 +578,7 @@ body {
 	color: var(--kyuhi);
 	font-size: 2.5rem;
 	position: absolute;
-	top: -2rem;
+	bottom: -1.5rem;
 	-webkit-animation: ctr 15s infinite;
 	animation: ctr 15s infinite;
 	text-shadow: (1px 1px 75px rgba(255, 255, 255, 1));
