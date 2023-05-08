@@ -428,15 +428,15 @@ img.vert-move-6 {
 }
 
 .pipe-left {
-	margin-top: 15%;
+	margin-top: 5%;
 	position: absolute;
 	background-image: url(/images/tube_H.png);
 	z-index: 0;
 	width: 80px;
 	height: 90%;
 	overflow: hidden;
-	-webkit-animation: bones 45s infinite;
-	animation: bones 45s infinite;
+	-webkit-animation: bones 10s infinite;
+	animation: bones 10s infinite;
 	right: 70%;
 }
 
