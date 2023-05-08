@@ -427,6 +427,19 @@ img.vert-move-6 {
 	animation: bones 15s infinite;
 }
 
+.pipe-left {
+	margin-top: 15%;
+	position: absolute;
+	background-image: url(/images/tube_H.png);
+	z-index: 0;
+	width: 80px;
+	height: 90%;
+	overflow: hidden;
+	-webkit-animation: bones 45s infinite;
+	animation: bones 45s infinite;
+	right: 70%;
+}
+
 .pipe-right {
 	margin-top: 0%;
 	position: absolute;
@@ -454,6 +467,10 @@ img.vert-move-6 {
 }
 
 .pipe-right::after {
+	content: url(/images/cross.png);
+}
+
+.pipe-left::after {
 	content: url(/images/cross.png);
 }
 
@@ -648,6 +665,43 @@ body {
 }
 
 @keyframes bones-2 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+.pipe-left::before {
+	content: url(/images/pack.webp);
+	position: absolute;
+	left: 0;
+	-webkit-animation: bones-3 15s infinite;
+	animation: bones-3 15s infinite;
+	transform: scale(1);
+}
+
+@-webkit-keyframes bones-3 {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 75%;
+	}
+
+	100% {
+		top: 0%
+	}
+}
+
+@keyframes bones-3 {
 	0% {
 		top: 0;
 	}
