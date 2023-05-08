@@ -437,7 +437,7 @@ img.vert-move-6 {
 	overflow: hidden;
 	-webkit-animation: bones 30s infinite;
 	animation: bones 30s infinite;
-	right: 15%;
+	right: 10%;
 }
 
 .pipe-h {
