@@ -333,7 +333,7 @@ img.vert-move-6 {
 	background-size: cover; */
 	/* transform: skewY(-5deg); */
 	margin-bottom: 1rem;
-	background: url(/images/BG-B.webp), black !important;
+	background: url(/images/BG-B.webp) !important;
 	background-position: bottom !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
