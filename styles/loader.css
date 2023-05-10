@@ -317,7 +317,7 @@ img.vert-move-6 {
 	transform: skewY(5deg);
 	margin: 5rem 0;
 	background-image: url(/images/spaceship.png) !important;
-	background-position: bottom !important;
+	background-position: center !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
 }
@@ -330,7 +330,7 @@ img.vert-move-6 {
 	transform: skewY(-5deg);
 	margin: 5rem 0;
 	background-image: url(/images/BG-B.webp) !important;
-	background-position: bottom !important;
+	background-position: center !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
 }
@@ -343,7 +343,7 @@ img.vert-move-6 {
 	transform: skewY(5deg);
 	margin: 5rem 0;
 	background-image: url(/images/cave.png) !important;
-	background-position: bottom !important;
+	background-position: center !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
 }
