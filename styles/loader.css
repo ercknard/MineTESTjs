@@ -719,5 +719,35 @@ body {
 	background-image: url(/images/cave-biome.png);
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover;
+	/* -webkit-animation: body-bg 30s infinite;
+	animation: body-bg 30s infinite; */
 }
+
+/* @-webkit-keyframes body-bg {
+	0% {
+		background-image: url(/images/sky.png);
+	}
+
+	90% {
+		background-image: url(/images/cave-biome.png);
+	}
+
+	100% {
+		background-image: url(/images/sky.png);
+	}
+}
+
+@keyframes body-bg {
+	0% {
+		background-image: url(/images/sky.png);
+	}
+
+	90% {
+		background-image: url(/images/cave-biome.png);
+	}
+
+	100% {
+		background-image: url(/images/sky.png);
+	}
+} */
+
