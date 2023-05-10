@@ -47,14 +47,14 @@ body {
 .earth-bg {
     position: relative;
     width: 100%;
-    min-height: 110vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 	overflow: hidden;
 	border-bottom:3px solid var(--kyuhi);
 	background: linear-gradient(to bottom, transparent, rgb(95, 169, 248, 1));
-	transform: skewY(-5deg);
+	/* transform: skewY(-5deg); */
 }
 
 .earth-bg::before {
@@ -133,8 +133,8 @@ body {
     font-size: 3.5em;
     color: #fff;
 	text-align: center;
-	margin-bottom: 1rem;
-	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
 }
 
 .sec h3 {
@@ -503,7 +503,7 @@ header {
 	background-size: 15vh;
 	background-position: center;
 	box-shadow: 1px 1px 25px var(--kyuhi);
-	transform: skewY(-5deg);
+	/* transform: skewY(-5deg); */
 	border-bottom: 5px solid var(--kyuhi);
 	border-top: 5px solid var(--kyuhi);
   }
@@ -643,10 +643,14 @@ svg {
 	border-radius: 5px;
 }
 
-.banner:hover {
-	transform: scale(1.1);
+.agent-home:hover .banner:not(:hover) {
 	border-radius: 10px;
 	z-index: 10;
+	filter: blur(5px);
+}
+
+.agent-home:hover {
+	transform: scale(1);
 }
 
 .squid-color {
