@@ -315,7 +315,7 @@ img.vert-move-6 {
 	background-position: bottom;
 	background-size: cover; */
 	transform: skewY(5deg);
-	margin: 5rem 0;
+	margin: 0 0;
 	background-image: url(/images/spaceship.png) !important;
 	background-position: center !important;
 	background-attachment: fixed !important;
@@ -328,9 +328,9 @@ img.vert-move-6 {
 	background-position: bottom;
 	background-size: cover; */
 	transform: skewY(-5deg);
-	margin: 5rem 0;
-	background-image: url(/images/BG-B.webp) !important;
-	background-position: center !important;
+	margin: 0 0;
+	background: url(/images/BG-B.webp), black !important;
+	background-position: bottom !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
 }
@@ -341,7 +341,7 @@ img.vert-move-6 {
 	background-position: bottom;
 	background-size: cover; */
 	transform: skewY(5deg);
-	margin: 5rem 0;
+	margin: 0 0;
 	background-image: url(/images/cave.png) !important;
 	background-position: center !important;
 	background-attachment: fixed !important;
