@@ -342,7 +342,7 @@ img.vert-move-6 {
 	background-size: cover; */
 	transform: skewY(5deg);
 	margin: 5rem 0;
-	background-image: url(/images/cave.png) !important;
+	background-image: url(/images/cave-biome.png) !important;
 	background-position: bottom !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
@@ -713,4 +713,11 @@ body {
 	100% {
 		top: 0%
 	}
+}
+
+body {
+	background-image: url(/images/cave-biome.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
