@@ -716,7 +716,7 @@ body {
 }
 
 body {
-	background-image: url(/images/sky.png);
+	background-image: url(/images/cave-biome.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
