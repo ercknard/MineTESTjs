@@ -352,6 +352,19 @@ img.vert-move-6 {
 	background-size: cover !important;
 }
 
+.coins-bg {
+	/* background: linear-gradient(45deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(97, 105, 207, .3) 0%, black 10%, transparent 50%), url(/images/cave.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover; */
+	/* transform: skewY(5deg); */
+	margin-bottom: 1rem;
+	background-image: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(45deg, black 0%, black 5%, transparent 50%), url(/images/coin-bg.png) !important;
+	background-position: center !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
+}
+
 .world-op {
 	/* transform: skewY(5deg); */
 	padding: 3rem 2rem;
@@ -376,6 +389,17 @@ img.vert-move-6 {
 
 .admin-op {
 	/* transform: skewY(-5deg); */
+	padding: 3rem 2rem;
+	border: 3px solid var(--kyuhi);
+	box-shadow: 1px 1px 25px var(--kyuhi);
+	background: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(135deg, black 0%, black 10%, transparent 50%);
+	backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px);
+	border-radius: 5px;
+}
+
+.coins-op {
+	/* transform: skewY(5deg); */
 	padding: 3rem 2rem;
 	border: 3px solid var(--kyuhi);
 	box-shadow: 1px 1px 25px var(--kyuhi);
