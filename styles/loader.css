@@ -966,8 +966,6 @@ background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 	display: flex;
 	border: 3px solid var(--kyuhi);
 	background: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(135deg, black 0%, black 10%, transparent 50%);
-	backdrop-filter: blur(5px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px);
 	border-radius: 5px;
 	margin-top: 1rem;
 }
