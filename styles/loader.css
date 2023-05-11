@@ -962,12 +962,10 @@ background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 }
 
 .test {
-	position: absolute;
-	top: 10%;
-	margin-left: 22.5rem;
-	margin-right: 0;
+	display: flex;
 }
 
 .leads-portrait-1 {
-	display: block;
+	display: inline-block;
+	width: 25vh;
 }
