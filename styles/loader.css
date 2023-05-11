@@ -898,12 +898,12 @@ body {
 	text-shadow: 2px 2px 5px black;
 }
 
-#left-valve, #left-valve-sky, #left-valve-admin {
+#left-valve, #left-valve-sky, #left-valve-admin, #left-valve-coin {
 	transform: translateX(0vw);
 	overflow: hidden;
 }
 
-#right-valve, #right-valve-sky, #right-valve-admin {
+#right-valve, #right-valve-sky, #right-valve-admin, #right-valve-coin {
 	transform: translateX(50vw);
 	overflow: hidden;
 }
@@ -945,3 +945,29 @@ background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 .primary-pic {
 	display: block;
   }
+
+.test-coin {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 10%;
+	margin-bottom: 1rem;
+}
+
+.fence {
+	background-image: url(/images/fence.png);
+	height: 50px;
+
+}
+
+.test {
+	position: absolute;
+	top: 10%;
+	margin-left: 22.5rem;
+	margin-right: 0;
+}
+
+.leads-portrait-1 {
+	display: block;
+}
