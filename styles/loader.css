@@ -319,6 +319,20 @@ img.vert-move-6 {
 	width: 35%;
 }
 
+.leads-photo-abs4 {
+	display: block;
+	border: 10px dotted white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	width: 8vh;
+}
+
 .mod {
 	margin-top: 2rem;
 }
@@ -921,3 +935,13 @@ top: 0;
 background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 }
 
+.coin-bg {
+	text-align: center;
+	padding: 1rem;
+	background-color: black;
+	border: 5px double white;
+}
+
+.primary-pic {
+	display: block;
+  }

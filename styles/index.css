@@ -813,6 +813,18 @@ svg {
 
 }
 
+.active-coin {
+	border-radius: 10px;
+	z-index: 10;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 1));
+	-webkit-animation: squid .85s infinite alternate;
+	animation: squid .85s infinite alternate;
+	transform: scale(1.1);
+
+}
+
 @-webkit-keyframes squid {
 	0% {
 		transform: translateY(0) scale(1.1);
