@@ -853,7 +853,7 @@ body {
 	border: 1rem solid gray;
 	z-index: 15;
 	overflow: hidden;
-	box-shadow: inset 10px 10px 20px black;
+	box-shadow: inset 10px 10px 50px black;
 }
 
 .left-valve {
@@ -865,7 +865,7 @@ body {
 	border: 1rem solid gray;
 	z-index: 15;
 	overflow: hidden;
-	box-shadow: inset -10px 10px 20px black;
+	box-shadow: inset -10px 10px 50px black;
 }
 
 .left-valve::before {
