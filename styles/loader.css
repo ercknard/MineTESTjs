@@ -348,7 +348,7 @@ img.vert-move-6 {
 	background-size: cover; */
 	/* transform: skewY(5deg); */
 	margin-bottom: 1rem;
-	background-image: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(45deg, black 0%, black 5%, transparent 50%), url(/images/spaceship.png) !important;
+	background-image: url(/images/spaceship.png) !important;
 	background-position: center !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
@@ -361,7 +361,7 @@ img.vert-move-6 {
 	background-size: cover; */
 	/* transform: skewY(-5deg); */
 	margin-bottom: 1rem;
-	background-image: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(45deg, black 0%, black 5%, transparent 50%), url(/images/BG-B.webp) !important;
+	background-image: url(/images/BG-B.webp) !important;
 	background-position: bottom !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
@@ -374,7 +374,7 @@ img.vert-move-6 {
 	background-size: cover; */
 	/* transform: skewY(5deg); */
 	margin-bottom: 1rem;
-	background-image: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(45deg, black 0%, black 5%, transparent 50%), url(/images/seq-house.png) !important;
+	background-image: url(/images/seq-house.png) !important;
 	background-position: center !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
@@ -387,7 +387,7 @@ img.vert-move-6 {
 	background-size: cover; */
 	/* transform: skewY(5deg); */
 	margin-bottom: 1rem;
-	background-image: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(45deg, black 0%, black 5%, transparent 50%), url(/images/coin-bg.png) !important;
+	background-image: url(/images/coin-bg.png) !important;
 	background-position: center !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
