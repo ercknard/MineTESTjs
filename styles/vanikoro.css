@@ -643,10 +643,14 @@ svg {
 	border-radius: 5px;
 }
 
+.banner:hover {
+	transform: scale(1.1);
+}
+
 .agent-home:hover .banner:not(:hover) {
 	border-radius: 10px;
 	z-index: 10;
-	filter: blur(5px);
+	/* filter: blur(5px); */
 }
 
 .agent-home:hover {
