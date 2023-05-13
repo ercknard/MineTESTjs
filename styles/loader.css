@@ -368,6 +368,7 @@ img.vert-move-6 {
 	padding: 3rem 2rem;
 	border: 3px solid var(--kyuhi);
 	background: linear-gradient(-45deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), linear-gradient(135deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), url(/images/Stone-S.png);
+	background: linear-gradient(-45deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), linear-gradient(135deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), black;
 	border-radius: 5px;
 	box-shadow: 10px 10px 20px black;
 }
@@ -795,7 +796,7 @@ height: 100%;
 left: 0;
 top: 0;
 
-background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 }
 
 .coin-bg {
@@ -841,9 +842,4 @@ background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 .slideshow-container {
 	display: block;
 	height: 12.5vh;
-}
-
-h3 {
-	text-align: center;
-	font-weight: bolder;
 }
