@@ -710,42 +710,6 @@ body {
 	}
 }
 
-body {
-	/* background-image: url(/images/cave-biome.png);
-	background-attachment: fixed;
-	background-position: center; */
-	/* -webkit-animation: body-bg 30s infinite;
-	animation: body-bg 30s infinite; */
-}
-
-/* @-webkit-keyframes body-bg {
-	0% {
-		background-image: url(/images/sky.png);
-	}
-
-	90% {
-		background-image: url(/images/cave-biome.png);
-	}
-
-	100% {
-		background-image: url(/images/sky.png);
-	}
-}
-
-@keyframes body-bg {
-	0% {
-		background-image: url(/images/sky.png);
-	}
-
-	90% {
-		background-image: url(/images/cave-biome.png);
-	}
-
-	100% {
-		background-image: url(/images/sky.png);
-	}
-} */
-
 .right-valve {
 	position: absolute;
 	width: 50vw;
@@ -755,7 +719,7 @@ body {
 	border: 1rem solid gray;
 	z-index: 15;
 	overflow: hidden;
-	box-shadow: inset 10px 10px 50px black;
+	box-shadow: inset 10px 10px 100px black;
 }
 
 .left-valve {
@@ -767,35 +731,35 @@ body {
 	border: 1rem solid gray;
 	z-index: 15;
 	overflow: hidden;
-	box-shadow: inset -10px 10px 50px black;
+	box-shadow: inset -10px 10px 100px black;
 }
 
 .left-valve::before {
-	content: "< CRYP";
+	content: "❖ CRYP";
 	right: 5rem;
-	top: 47%;
+	top: 45%;
 	font-weight: bolder;
 	color: var(--kyuhi);
 	position: absolute;
 	z-index: 15;
 	transform: scale(1.5);
 	font-size: 3rem;
-	-webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-width: .1px;
 	-webkit-text-stroke-color: rgb(128, 128, 128);
 	text-shadow: 2px 2px 5px black;
 }
 
 .right-valve::before {
-	content: "TECH >";
+	content: "TECH ❖";
 	left: 5rem;
-	top: 47%;
+	top: 45%;
 	font-weight: bolder;
 	color: var(--kyuhi);
 	position: absolute;
 	z-index: 15;
 	transform: scale(1.5);
 	font-size: 3rem;
-	-webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-width: .1px;
 	-webkit-text-stroke-color: rgb(128, 128, 128);
 	text-shadow: 2px 2px 5px black;
 }
