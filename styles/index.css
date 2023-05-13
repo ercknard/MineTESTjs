@@ -141,8 +141,11 @@ body {
 .sec h3 {
     font-family: Minecraftsubfont, Garamond, serif;
     font-size: 2.5em;
-    color: #fff;
 	margin-bottom: 5px;
+	color: var(--kyuhi);
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(128, 128, 128);
+	text-shadow: 2px 2px 5px black;
 }
 
 .sec h4 {
