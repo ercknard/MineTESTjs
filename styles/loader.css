@@ -357,7 +357,7 @@ img.vert-move-6 {
 }
 
 .admins-bg {
-	background-image: url(/images/seq-house.png) !important;
+	background-image: url(/images/corridor-a.png) !important;
 }
 
 .coins-bg {
@@ -842,4 +842,16 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 .slideshow-container {
 	display: block;
 	height: 12.5vh;
+}
+
+.admin-name {
+	position: absolute;
+	width: 100%;
+	text-indent: 0 !important;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto;
+	top: 85%;
+	font-size: 2.5rem !important;
 }
