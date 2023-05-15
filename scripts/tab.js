@@ -120,3 +120,43 @@ for (var i = 0; i < btnscoin.length; i++) {
     this.className += " active-coin";
   });
 }
+
+var elementlsky = document.getElementById("left-valve-sky");
+elementlsky.addEventListener("click", function() {
+  elementlsky.classList.toggle("close");
+});
+
+var elementrsky = document.getElementById("right-valve-sky");
+elementrsky.addEventListener("click", function() {
+  elementrsky.classList.toggle("close-right");
+});
+
+var elementl = document.getElementById("left-valve");
+elementl.addEventListener("click", function() {
+  elementl.classList.toggle("close");
+});
+
+var elementr = document.getElementById("right-valve");
+elementr.addEventListener("click", function() {
+  elementr.classList.toggle("close-right");
+});
+
+var elementladmin = document.getElementById("left-valve-admin");
+elementladmin.addEventListener("click", function() {
+  elementladmin.classList.toggle("close");
+});
+
+var elementradmin = document.getElementById("right-valve-admin");
+elementradmin.addEventListener("click", function() {
+  elementradmin.classList.toggle("close-right");
+});
+
+var elementlcoin = document.getElementById("left-valve-coin");
+elementlcoin.addEventListener("click", function() {
+  elementlcoin.classList.toggle("close");
+});
+
+var elementrcoin = document.getElementById("right-valve-coin");
+elementrcoin.addEventListener("click", function() {
+  elementrcoin.classList.toggle("close-right");
+});

@@ -785,6 +785,9 @@ body {
 	z-index: 15;
 	overflow: hidden;
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
+	transform: translateX(50vw);
+	overflow: hidden;
+	transition: .1s linear;
 }
 
 .left-valve {
@@ -797,6 +800,55 @@ body {
 	z-index: 15;
 	overflow: hidden;
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
+	transform: translateX(0vw);
+	overflow: hidden;
+	transition: .1s linear;
+}
+
+.close {
+	background-image: url(/images/transparent-stone.webp);
+	background-position: right;
+	background-color: rgba(255, 255, 255,.15);
+	box-shadow: inset -1px 1px 100px rgba(255, 255, 255,.1), -10px 10px 10px black;
+	border: 1rem solid #666666;
+}
+
+.close-right {
+	background-image: url(/images/transparent-stone.webp);
+	background-position: left;
+	background-color: rgba(255, 255, 255,.15);
+	box-shadow: inset -1px 1px 100px rgba(255, 255, 255,.1), 10px 10px 10px black;
+	border: 1rem solid #666666;
+}
+
+.close::before {
+	content: "❖ MINE ☢" !important;
+	right: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(16, 16, 16) !important;
+	text-shadow: 2px 2px 5px black;
+}
+
+.close-right::before {
+	content: "☢ TEST ❖" !important;
+	left: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(16, 16, 16) !important;
+	text-shadow: 2px 2px 5px black;
 }
 
 .left-valve::before {
@@ -830,13 +882,11 @@ body {
 }
 
 #left-valve, #left-valve-sky, #left-valve-admin, #left-valve-coin {
-	transform: translateX(0vw);
-	overflow: hidden;
+
 }
 
 #right-valve, #right-valve-sky, #right-valve-admin, #right-valve-coin {
-	transform: translateX(50vw);
-	overflow: hidden;
+
 }
 
 p {
