@@ -856,3 +856,7 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 	top: 85%;
 	font-size: 2.5rem !important;
 }
+
+.earth-bg {
+	box-shadow: 0px 0px 500px 10px rgba(0,0,0,1) inset;
+}

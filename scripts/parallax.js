@@ -1,3 +1,4 @@
+let primary_front_bg = document.getElementById('primary-front-bg');
 let front_bg = document.getElementById('front-bg');
 let mid_bg = document.getElementById('mid-bg');
 let sun = document.getElementById('sun');
@@ -18,6 +19,7 @@ let rightcoin = document.getElementById('right-valve-coin');
 
 window.addEventListener('scroll',function(){
     let value = window.scrollY;
+    primary_front_bg.style.top = value * 0.20 + 'px';
     front_bg.style.top = value * 0.40 + 'px';
     mid_bg.style.top = value * 0.60 + 'px';
     sun.style.top = value * .4 + 'px';

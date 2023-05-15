@@ -346,17 +346,9 @@ header {
 
 #web_title {
 	position: absolute;
-	font-size: 4.25rem;
-	color: #3b6718;
-	text-shadow:
-    -1px -1px 0 #000,
-     0   -1px 0 #000,
-     1px -1px 0 #000,
-     1px  0   0 #000,
-     1px  1px 0 #000,
-     0    1px 0 #000,
-    -1px  1px 0 #000,
-    -1px  0   0 #000;
+	font-size: 6rem;
+	color: #e7e7e0;
+	text-shadow: 0 0 15px #9d822b;
 	/* -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1)); */
 	z-index: 5;
 	margin-left: auto; 
@@ -369,11 +361,11 @@ header {
 	text-align: center;
 	padding: 1rem;
 	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .5));
-	border: 2px solid var(--kyuhi);
-	font-size: 4.5rem;
+	border: 2px solid white;
+	font-size: 5rem;
 	border-image:
 		linear-gradient(to right, rgba(0, 0, 0, 0),
-        var(--kyuhi),
+			white,
 			rgba(0, 0, 0, 0)) 1;
 			color: #fff;
 }
