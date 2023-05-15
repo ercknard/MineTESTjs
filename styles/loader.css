@@ -413,14 +413,14 @@ img.vert-move-6 {
 
 .pipe-h {
 	position: relative;
-	background-image: url(/images/fence.png);
+	background-image: url(/images/tube_V.png);
 	z-index: -1;
 	width: 100%;
-	height: 55px;
+	height: 80px;
 	overflow: hidden;
 }
 
-.pipe-ha::after {
+.pipe-h::after {
 	content: url(/images/cross-b.png);
 }
 
@@ -821,7 +821,8 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 }
 
 .fence {
-	background-image: url(/images/fence.png);
+	background-image: url(/images/tube_V.png);
+	background-position: center;
 	height: 50px;
 
 }
