@@ -632,7 +632,6 @@ svg {
     background-color: rgba(0, 0, 0, .5);
 	/* border: 2.5px solid rgba(255, 255, 255, .5); */
 	border-image: linear-gradient(rgba(255, 255, 255, .5), transparent) 10;
-	border-bottom: none;
 	border-width: 2.5px;
 	border-style: solid;
 	transition: .5s ease-in-out;
