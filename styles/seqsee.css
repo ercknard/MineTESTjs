@@ -747,7 +747,7 @@ svg {
 	border-top: 3px solid var(--kyuhi);
 	border-bottom: 3px solid var(--kyuhi);
 	padding: 2rem 0;
-	box-shadow: 1px 1px 25px var(--kyuhi);
+	box-shadow: 1px 1px 25px var(--kyuhi), 0px 0px 500px 10px rgba(0,0,0,1) inset;
 	background: linear-gradient(45deg, rgba(183, 112, 173, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(183, 112, 173, .3) 0%, black 10%, transparent 50%);
 }
 
