@@ -423,18 +423,71 @@ img.vert-move-6 {
 	right: 0%;
 }
 
-.pipe-h {
+.pipe-to-left {
 	position: relative;
-	background-image: url(/images/tube_V.png);
+	background-image: url(/images/chain.png);
+	background-position: center;
+	background-size: contain;
 	z-index: -1;
-	width: 100%;
+	width: 200vw;
 	height: 80px;
 	overflow: hidden;
+	transform: scale(10);
+	-webkit-animation: pipe-left 15s infinite;
+	animation: pipe-left 15s infinite;
 }
 
-.pipe-h::after {
-	content: url(/images/cross-b.png);
+.pipe-to-left::before {
+	content: url(/images/cross.png);
 }
+
+@keyframes pipe-left {
+	0% {
+		right: -5vw;
+	}
+
+	50% {
+		right: -50vw;
+	}
+
+	100% {
+		right: -5vw;
+	}
+}
+
+.pipe-to-right {
+	position: relative;
+	background-image: url(/images/chain.png);
+	background-position: center;
+	background-size: contain;
+	z-index: -1;
+	width: 200vw;
+	height: 80px;
+	overflow: hidden;
+	transform: scale(10);
+	-webkit-animation: pipe-right 15s infinite;
+	animation: pipe-right 15s infinite;
+}
+
+/* .pipe-to-right::after {
+	content:"⚪";
+	font-size: 1rem;
+} */
+
+@keyframes pipe-right {
+	0% {
+		right: 5vw;
+	}
+
+	50% {
+		right: 50vw;
+	}
+
+	100% {
+		right: 5vw;
+	}
+}
+
 
 .pipe-right::after {
 	content: url(/images/cross.png);
