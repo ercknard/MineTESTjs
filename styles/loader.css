@@ -735,8 +735,8 @@ body {
 }
 
 .left-valve::before {
-	content: "❖ CRYP";
-	right: 5rem;
+	content: "❖ CRYP ☢";
+	right: 1rem;
 	top: 45%;
 	font-weight: bolder;
 	color: var(--kyuhi);
@@ -750,8 +750,8 @@ body {
 }
 
 .right-valve::before {
-	content: "TECH ❖";
-	left: 5rem;
+	content: "☢ TECH ❖";
+	left: 1rem;
 	top: 45%;
 	font-weight: bolder;
 	color: var(--kyuhi);
