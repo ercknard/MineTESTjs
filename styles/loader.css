@@ -855,6 +855,17 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 	margin-right: auto;
 	top: 85%;
 	font-size: 2.5rem !important;
+	transition: 1s ease-in-out;
+}
+
+.banner:hover .admin-name {
+	padding-bottom: 5.5rem;
+	padding-top: 3rem;
+	top: 50%;
+	background: linear-gradient(to top, rgba(0,0,0,.75), transparent);
+	border-bottom: .2rem solid wheat;
+	color: #e7e7e0;
+	text-shadow: 0 0 10px #9d822b;
 }
 
 .earth-bg {
