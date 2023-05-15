@@ -301,6 +301,7 @@ img.vert-move-6 {
 	top: 42.5%;
 	margin: 0;
 	transform: scale(1.2);
+	border: 1px dotted white;
 }
 
 .leads-photo-abs2 {
@@ -870,13 +871,14 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 }
 
 .banner:hover .admin-name {
-	padding-bottom: 5.5rem;
+	padding-bottom: 5rem;
 	padding-top: 3rem;
 	top: 50%;
 	background: linear-gradient(to top, rgba(0,0,0,1), transparent);
 	border-bottom: .2rem solid transparent;
 	color: #e7e7e0;
 	text-shadow: 0 0 10px #9d822b;
+	font-size: 3rem !important;
 }
 
 .banner:hover .loader-icon-23 {
