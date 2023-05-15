@@ -809,7 +809,7 @@ body {
 	background-image: url(/images/transparent-stone.webp);
 	background-position: right;
 	background-color: rgba(255, 255, 255,.15);
-	box-shadow: inset -1px 1px 100px rgba(255, 255, 255,.1), -10px 10px 10px black;
+	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	border: 1rem solid #666666;
 }
 
@@ -817,7 +817,7 @@ body {
 	background-image: url(/images/transparent-stone.webp);
 	background-position: left;
 	background-color: rgba(255, 255, 255,.15);
-	box-shadow: inset -1px 1px 100px rgba(255, 255, 255,.1), 10px 10px 10px black;
+	box-shadow: inset -10px 10px 100px black, 10px 10px 10px black;
 	border: 1rem solid #666666;
 }
 
