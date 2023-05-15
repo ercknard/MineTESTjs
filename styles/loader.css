@@ -342,6 +342,7 @@ img.vert-move-6 {
 }
 
 .sky-bg, .world-bg, .admins-bg, .coins-bg {
+	box-shadow: 0px 0px 500px 10px rgba(0,0,0,1) inset;
 	background-position: center !important;
 	background-attachment: fixed !important;
 	background-size: cover !important;
@@ -434,7 +435,7 @@ img.vert-move-6 {
 
 
 .sec-2 {
-	background-image: url(/images/cave-biome.png);
+	background-image: url(/images/sky-loader-for-sec.png);
 	background-attachment: fixed;
 	background-position: center;
 	display: flex;
