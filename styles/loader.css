@@ -781,13 +781,14 @@ body {
 	height: 53vh;
 	background-image: url(/images/stone.webp);
 	background-position: left;
+	background-size: 9.5vh;
 	border: 1rem solid gray;
 	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
 	transform: translateX(50vw);
 	overflow: hidden;
-	transition: 1s linear;
+	transition: 1s ease-out;
 }
 
 .left-valve {
@@ -796,13 +797,14 @@ body {
 	height: 53vh;
 	background-image: url(/images/stone.webp);
 	background-position: right;
+	background-size: 9.5vh;
 	border: 1rem solid gray;
 	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	transform: translateX(0vw);
 	overflow: hidden;
-	transition: 1s linear;
+	transition: 1s ease-out;
 }
 
 .left-valve:hover {
@@ -811,7 +813,6 @@ body {
 	background-color: rgba(255, 255, 255,.15);
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	border: 1rem solid #666666;
-	transition: 1s linear;
 }
 
 .right-valve:hover {
@@ -820,7 +821,6 @@ body {
 	background-color: rgba(255, 255, 255,.15);
 	box-shadow: inset -10px 10px 100px black, 10px 10px 10px black;
 	border: 1rem solid #666666;
-	transition: 1s linear;
 }
 
 .left-valve:hover::before {
