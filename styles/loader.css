@@ -369,11 +369,11 @@ img.vert-move-6 {
 }
 
 .admins-bg {
-	background-image: url(/images/corridor-a.png) !important;
+	background-image: url(/images/corridor-b.png) !important;
 }
 
 .coins-bg {
-	background-image: url(/images/coin-bg.png) !important;
+	background-image: url(/images/cave.png) !important;
 }
 
 .sky-op, .world-op, .admin-op, .coins-op {
@@ -925,6 +925,7 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 
 .primary-pic {
 	display: block;
+	visibility: visible;
   }
 
 .test-coin {
