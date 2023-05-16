@@ -398,7 +398,7 @@ img.vert-move-6 {
 }
 
 .pipe-left {
-	margin-top: 5%;
+	margin-top: 13%;
 	position: absolute;
 	background-image: url(/images/tube_H.png);
 	z-index: 0;
@@ -411,7 +411,7 @@ img.vert-move-6 {
 }
 
 .pipe-right {
-	margin-top: 5%;
+	margin-top: 7%;
 	position: absolute;
 	background-image: url(/images/tube_H.png);
 	z-index: -1;
