@@ -136,7 +136,7 @@ body {
 .sec {
     position: relative;
 	/* background: linear-gradient(180deg, transparent, transparent, #60b4f4), url(/images/sky-loader-for-sec.png); */
-	background: linear-gradient(180deg, transparent, transparent, rgba(97, 105, 207, .75));
+	background: linear-gradient(180deg, transparent, transparent, rgba(97, 105, 207, .50));
 	background-size: contain;
 	padding-top: 1rem;
 	z-index: 3;
