@@ -304,6 +304,10 @@ img.vert-move-6 {
 	border: 1px dotted white;
 }
 
+.banner {
+	cursor: pointer;
+}
+
 .leads-photo-abs2 {
 	display: block;
 	border: 10px double white;
