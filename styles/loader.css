@@ -1158,8 +1158,8 @@ input[type=checkbox] {
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
 	transform: translateX(50vw);
 	overflow: hidden;
-	-webkit-animation: modal-door-right 2s;
-	animation: modal-door-right 2s;
+	-webkit-animation: modal-door-right 1s;
+	animation: modal-door-right 1s;
 	animation-iteration-count: 1;
 }
 
@@ -1167,8 +1167,12 @@ input[type=checkbox] {
 	0% {
 	}
 
-	100%{
+	90%{
 		transform: translateX(75vw);
+	}
+
+	100%{
+		transform: translateX(50vw);
 	}
 }
 
@@ -1185,8 +1189,8 @@ input[type=checkbox] {
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	transform: translateX(0vw);
 	overflow: hidden;
-	-webkit-animation: modal-door-left 2s;
-	animation: modal-door-left 2s;
+	-webkit-animation: modal-door-left 1s;
+	animation: modal-door-left 1s;
 	animation-iteration-count: 1;
 }
 
@@ -1194,8 +1198,12 @@ input[type=checkbox] {
 	0% {
 	}
 
-	100%{
+	90%{
 		transform: translateX(-25vw);
+	}
+
+	100%{
+		transform: translateX(0vw);
 	}
 }
 
