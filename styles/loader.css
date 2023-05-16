@@ -473,11 +473,6 @@ img.vert-move-6 {
 	animation: pipe-right 15s infinite;
 }
 
-/* .pipe-to-right::after {
-	content:"⚪";
-	font-size: 1rem;
-} */
-
 @keyframes pipe-right {
 	0% {
 		right: 5vw;
@@ -786,7 +781,7 @@ body {
 	background-image: url(/images/stone.webp);
 	background-position: left;
 	background-size: 9.5vh;
-	border: 1rem solid #5d5d5d;
+	border: 1rem solid #5d5d5d75;
 	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
@@ -802,7 +797,7 @@ body {
 	background-image: url(/images/stone.webp);
 	background-position: right;
 	background-size: 9.5vh;
-	border: 1rem solid #5d5d5d;
+	border: 1rem solid #5d5d5d75;
 	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
@@ -951,10 +946,6 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 
 .test {
 	display: flex;
-	/* border: 3px solid var(--kyuhi);
-	background: linear-gradient(-45deg, black 0%, black 10%, transparent 50%), linear-gradient(135deg, black 0%, black 10%, transparent 50%);
-	border-radius: 5px;
-	margin-top: 1rem; */
 }
 
 .leads-portrait-1 {
@@ -1092,19 +1083,18 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 }
 
 input[type=checkbox] {
-	position: absolute; /* Force the checkbox at the start of the container */
-	cursor: pointer; /* Indicate the curtain is clickable */
-	width: 100%; /* The checkbox is as wide as the component */
-	height: 50vh; /* The checkbox is as tall as the component */
-	z-index: 100; /* Make sure the checkbox is on top of everything else */
-	opacity: 0; /* Hide the checkbox */
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 50vh;
+	z-index: 100;
+	opacity: 0;
   }
 
   input[type=checkbox]:checked ~ div.left-valve {
 	transform: translateX(-100vw);
   }
 		  
-  /* Slide the second panel in */
   input[type=checkbox]:checked ~ div.right-valve {
 	transform: translateX(100vw);
   }
@@ -1156,7 +1146,7 @@ input[type=checkbox] {
 	background-image: url(/images/stone.webp);
 	background-position: left;
 	background-size: 9.5vh;
-	border: 1rem solid #5d5d5d;
+	border: 1rem solid #5d5d5d75;
 	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
@@ -1187,7 +1177,7 @@ input[type=checkbox] {
 	background-image: url(/images/stone.webp);
 	background-position: right;
 	background-size: 9.5vh;
-	border: 1rem solid #5d5d5d;
+	border: 1rem solid #5d5d5d75;
 	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
