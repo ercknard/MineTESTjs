@@ -430,7 +430,7 @@ img.vert-move-6 {
 	background-size: contain;
 	z-index: -1;
 	width: 200vw;
-	height: 80px;
+	height: 5rem;
 	overflow: hidden;
 	transform: scale(10);
 	-webkit-animation: pipe-left 15s infinite;
@@ -462,7 +462,7 @@ img.vert-move-6 {
 	background-size: contain;
 	z-index: -1;
 	width: 200vw;
-	height: 80px;
+	height: 5rem;
 	overflow: hidden;
 	transform: scale(10);
 	-webkit-animation: pipe-right 15s infinite;
