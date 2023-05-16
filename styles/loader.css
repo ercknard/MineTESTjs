@@ -175,7 +175,7 @@ img.vert-move-6 {
 
 .loader-welcome {
 	filter: brightness(120%);
-	-webkit-text-stroke: .1px white;
+	-webkit-text-stroke: 1px white;
 	color: white;
 	font-size: 3rem;
 }
@@ -184,7 +184,7 @@ img.vert-move-6 {
 	background: linear-gradient(90deg, #fff, #fff);
 	background-repeat: no-repeat;
 	background-size: 80%;
-	background-color: #5B8FB9;
+	background-color: var(--kyuhi);
 	animation: text-motion-load 1.7s infinite;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: rgba(255, 255, 255, 0);
