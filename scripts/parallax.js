@@ -20,7 +20,7 @@ let rightcoin = document.getElementById('right-valve-coin');
 
 window.addEventListener('scroll',function(){
     let value = window.scrollY;
-    secondary_front_bg.style.top = value * 0.20 + 'px';
+    secondary_front_bg.style.top = value * 0.10 + 'px';
     primary_front_bg.style.top = value * 0.20 + 'px';
     front_bg.style.top = value * 0.40 + 'px';
     mid_bg.style.top = value * 0.60 + 'px';

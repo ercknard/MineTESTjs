@@ -1104,3 +1104,7 @@ input[type=checkbox] {
   input[type=checkbox]:checked ~ div.right-valve {
 	transform: translateX(100vw);
   }
+
+  .earth-bg img#secondary-front-bg{
+	filter: drop-shadow(0px 0px 5px#9d822b);
+}
