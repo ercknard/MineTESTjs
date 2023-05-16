@@ -1108,3 +1108,123 @@ input[type=checkbox] {
   .earth-bg img#secondary-front-bg{
 	filter: drop-shadow(0px 0px 5px#9d822b);
 }
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,1);
+	-webkit-animation: modal 6s;
+	animation: modal 6s;
+	animation-iteration-count: 1;
+  }
+
+  .modal-content {
+	display: block;
+	text-align: center;
+	padding: 10vh 0;
+	width: 100vw;
+	height: 100vh;
+  }
+
+  @keyframes modal {
+	0% {
+		opacity: 100;
+	}
+
+	100%{
+		opacity: 0;
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.right-valve-modal {
+	position: absolute;
+	width: 50vw;
+	height: 100vh;
+	background-image: url(/images/stone.webp);
+	background-position: left;
+	background-size: 9.5vh;
+	border: 1rem solid gray;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
+	transform: translateX(50vw);
+	overflow: hidden;
+	-webkit-animation: modal-door-right 2s;
+	animation: modal-door-right 2s;
+	animation-iteration-count: 1;
+}
+
+@keyframes modal-door-right{
+	0% {
+	}
+
+	100%{
+		transform: translateX(75vw);
+	}
+}
+
+.left-valve-modal {
+	position: absolute;
+	width:	50vw;
+	height: 100vh;
+	background-image: url(/images/stone.webp);
+	background-position: right;
+	background-size: 9.5vh;
+	border: 1rem solid gray;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
+	transform: translateX(0vw);
+	overflow: hidden;
+	-webkit-animation: modal-door-left 2s;
+	animation: modal-door-left 2s;
+	animation-iteration-count: 1;
+}
+
+@keyframes modal-door-left {
+	0% {
+	}
+
+	100%{
+		transform: translateX(-25vw);
+	}
+}
+
+.left-valve-modal::before {
+	content: "❖ CRYP ☢";
+	right: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(128, 128, 128);
+	text-shadow: 2px 2px 5px black;
+}
+
+.right-valve-modal::before {
+	content: "☢ TECH ❖";
+	left: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(128, 128, 128);
+	text-shadow: 2px 2px 5px black;
+}
