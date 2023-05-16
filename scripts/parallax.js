@@ -37,5 +37,4 @@ window.addEventListener('scroll',function(){
     // world.style.top = value * 0.40 + 'px';
     // admin.style.top = value * 0.40 + 'px';
     // pepe.style.top = value * .65 + 'px';
-    console.log(left.style.left);
 })

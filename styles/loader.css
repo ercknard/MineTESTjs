@@ -414,7 +414,7 @@ img.vert-move-6 {
 	margin-top: 5%;
 	position: absolute;
 	background-image: url(/images/tube_H.png);
-	z-index: 0;
+	z-index: -1;
 	width: 80px;
 	height: 90%;
 	overflow: hidden;
@@ -782,12 +782,12 @@ body {
 	background-image: url(/images/stone.webp);
 	background-position: left;
 	border: 1rem solid gray;
-	z-index: 15;
+	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
 	transform: translateX(50vw);
 	overflow: hidden;
-	transition: .1s linear;
+	transition: 1s linear;
 }
 
 .left-valve {
@@ -797,31 +797,33 @@ body {
 	background-image: url(/images/stone.webp);
 	background-position: right;
 	border: 1rem solid gray;
-	z-index: 15;
+	z-index: 100;
 	overflow: hidden;
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	transform: translateX(0vw);
 	overflow: hidden;
-	transition: .1s linear;
+	transition: 1s linear;
 }
 
-.close {
+.left-valve:hover {
 	background-image: url(/images/transparent-stone.webp);
 	background-position: right;
 	background-color: rgba(255, 255, 255,.15);
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	border: 1rem solid #666666;
+	transition: 1s linear;
 }
 
-.close-right {
+.right-valve:hover {
 	background-image: url(/images/transparent-stone.webp);
 	background-position: left;
 	background-color: rgba(255, 255, 255,.15);
 	box-shadow: inset -10px 10px 100px black, 10px 10px 10px black;
 	border: 1rem solid #666666;
+	transition: 1s linear;
 }
 
-.close::before {
+.left-valve:hover::before {
 	content: "❖ MINE ☢" !important;
 	right: 1rem;
 	top: 45%;
@@ -836,7 +838,7 @@ body {
 	text-shadow: 2px 2px 5px black;
 }
 
-.close-right::before {
+.right-valve:hover::before {
 	content: "☢ TEST ❖" !important;
 	left: 1rem;
 	top: 45%;
@@ -1083,3 +1085,21 @@ background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
 		top: -7.2%;
 	}
 }
+
+input[type=checkbox] {
+	position: absolute; /* Force the checkbox at the start of the container */
+	cursor: pointer; /* Indicate the curtain is clickable */
+	width: 100%; /* The checkbox is as wide as the component */
+	height: 50vh; /* The checkbox is as tall as the component */
+	z-index: 100; /* Make sure the checkbox is on top of everything else */
+	opacity: 0; /* Hide the checkbox */
+  }
+
+  input[type=checkbox]:checked ~ div.left-valve {
+	transform: translateX(-100vw);
+  }
+		  
+  /* Slide the second panel in */
+  input[type=checkbox]:checked ~ div.right-valve {
+	transform: translateX(100vw);
+  }
