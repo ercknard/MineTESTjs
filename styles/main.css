@@ -1,0 +1,1539 @@
+@import url("animations.css");
+
+@font-face {
+	font-family: Minecraftmainfont;
+	src: url(/font/Minetest\ Font.ttf);
+}
+
+@font-face {
+	font-family: Minecraftsubfont;
+	src: url(/font/VT323-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 1rem;
+	font-weight: normal;
+	font-family: Minecraftsubfont, Garamond, serif;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body {
+	background-color: #000;
+	height: 100%;
+}
+
+p {
+	text-shadow: 2px 2px 1px black;
+}
+
+#particles-js {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	z-index: 0;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.width-class {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+}
+
+@media (max-width: 1920px) {
+	.width-class {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+	}
+}
+
+@media (max-width: 1600px) {
+	.width-class {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 90%;
+	}
+}
+
+.width-class-admin {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+@media (max-width: 1920px) {
+	.width-class-admin {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1600px) {
+	.width-class-admin {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+}
+
+.to-flex {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.earth-bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	overflow: hidden;
+	border-bottom:3px solid white;
+	-webkit-animation: earth-anim 10s infinite;
+	animation: earth-anim 10s infinite;
+	box-shadow: 0px 0px 500px 10px rgba(0,0,0,1) inset;
+}
+
+.earth-bg::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255,255,255, .1), transparent);
+    z-index: 8;
+}
+
+.earth-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+    object-fit: cover;
+	z-index: 2;
+}
+
+.earth-bg img#sun{
+	-webkit-animation: sun-anim 15s infinite;
+	animation: sun-anim 15s infinite;
+	z-index: 0;
+}
+
+.bg-cloud {
+	opacity: 10%;
+	-webkit-animation: clouds-anim 30s infinite;
+	animation: clouds-anim 30s infinite;
+	position: absolute;
+}
+
+.clouds {
+	-webkit-animation: main-clouds-anim 30s infinite;
+	animation: main-clouds-anim 30s infinite;
+	position: absolute;
+}
+
+.clouds-earth {
+	-webkit-animation: clouds-anim-earth 30s infinite;
+	animation: clouds-anim-earth 30s infinite;
+	position: absolute;
+}
+
+#web_title {
+	position: absolute;
+	font-size: 6rem;
+	color: #e7e7e0;
+	text-shadow: 0 0 15px #9d822b;
+	z-index: 5;
+	margin-left: auto; 
+	margin-right: auto; 
+	transition: .5s ease-in-out;
+}
+
+#web_title.scrolled {
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .5));
+	border: 2px solid white;
+	font-size: 5rem;
+	border-image:
+		linear-gradient(to right, rgba(0, 0, 0, 0),
+			white,
+			rgba(0, 0, 0, 0)) 1;
+			color: #fff;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+
+.sec {
+    position: relative;
+	background: linear-gradient(180deg, transparent, transparent, rgba(96, 180, 244, .50));
+	background-size: contain;
+	padding-top: 1rem;
+	z-index: 3;
+	border-top: none;
+	overflow: hidden;
+	text-align: justify;
+	background-size: 125% 125%;
+	-webkit-animation: sec-bg 30s infinite;
+	animation: sec-bg 30s infinite;
+}
+
+.sec h2 {
+    font-family: Minecraftsubfont, Garamond, serif;
+    font-size: 3.5em;
+    color: #fff;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+}
+
+.sec h3 {
+    font-family: Minecraftsubfont, Garamond, serif;
+    font-size: 2.5em;
+    color: #fff;
+	margin-bottom: 5px;
+}
+
+.sec h4 {
+    font-family: Minecraftsubfont, Garamond, serif;
+    font-size: 1.5em;
+    color: black;
+	margin-bottom: 5px;
+	background-color: #fff;
+}
+
+.sec p {
+    font-size: 1.5em;
+    color: #fff;
+	text-indent: 50px;
+}
+
+.sec-2 {
+	background-image: url(/images/sky-loader-for-sec.png);
+	background-attachment: fixed;
+	background-position: center;
+	display: flex;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+header {
+	width: 100%;
+	top: 0;
+    z-index: 10;
+}
+
+.nav-buttons {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	font-size: 1.5rem;
+}
+
+.nav-buttons:hover {
+	background-image: linear-gradient(to top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+	transform: translateY(3px);
+    color: var(--kyuhi);
+}
+
+.nav-buttons:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.nav-buttons:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.navigation-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	text-decoration: none;
+}
+
+.index-navigation-main {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) !important;
+	border-bottom: 2px solid var(--kyuhi);
+	border-top: 2px solid var(--kyuhi);
+}
+
+.index-logo-main {
+	padding: .5rem;
+	width: 4rem;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.main-footer {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+
+.social-icon,
+.menu {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: .5rem 0;
+	flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+	list-style: none;
+}
+
+.social-icon__link {
+	font-size: 2rem;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.social-icon__link:hover {
+	transform: translateY(-10px);
+}
+
+.main-footer-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+#pepe-bg {
+	position: absolute;
+	z-index: 1;
+}
+
+#pepe-land {
+	position: absolute;
+	z-index: 9999;
+	top: -10%;
+	left: 0%;
+	width: 10vw;
+	transition: 1s ease-in-out;
+}
+
+  #npc-text {
+	position: absolute;
+	bottom: 40%;
+	left: 9vw;
+	z-index: 9999;
+	font-size: 1.3rem;
+	color:black;
+	padding: .5rem;
+	padding-left: 5rem;
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #c3c3c9;
+	-webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
+	clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
+	border: 5px solid #a2a2a7;
+  }
+
+  .npc {
+	width: 10px;
+  }
+
+  #pepe {
+	position: relative;
+	overflow: hidden;
+	height: 12.5vh;
+	background-image: url('/images/Glass_Pane.png');
+	background-color: rgba(255, 255, 255,.1);
+	background-size: 15vh;
+	background-position: center;
+	box-shadow: 1px 1px 25px white;
+	/* transform: skewY(-5deg); */
+	border-bottom: 1px solid var(--kyuhi);
+	border-top: 1px solid var(--kyuhi);
+  }
+
+  .pepe {
+	position: absolute;
+	width: 12.5vh;
+	-webkit-animation: pepe-cave-anim 10s infinite;
+	animation: pepe-cave-anim 10s infinite;
+	overflow: hidden;
+	z-index: -10;
+	opacity: .75;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.cave {
+	position: relative;
+    width: 100vw;
+	height: auto;
+	z-index: 100;
+}
+
+.typed-text {
+	color: white;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.typed-text-1 {
+	color: white;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.ct-icon {
+	width: 2rem;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+svg {
+	padding-top: 5rem;
+    display: block;
+    font: 5em 'Minecraftsubfont';
+    width: 100%;
+    margin: 1rem auto;
+	z-index: 3;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 3px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #3d6918;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #3e5c29;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #587a3a;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #fff;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #a5a088;
+  animation-delay: -5s;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.active-leads {
+	border-radius: 10px;
+	z-index: 10;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 1));
+	-webkit-animation: squid .85s infinite alternate;
+	animation: squid .85s infinite alternate;
+
+}
+
+.active-coin {
+	border-radius: 10px;
+	z-index: 10;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 1));
+	-webkit-animation: squid .85s infinite alternate;
+	animation: squid .85s infinite alternate;
+	transform: scale(1.1);
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.the-ship {
+    position: relative;
+    width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+
+.ship {
+		position: absolute;
+		width: 50vh;
+		height: auto;
+		z-index: 2;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+}
+
+.agent {
+	display: flex;
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.agent-home {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 1rem;
+	flex-wrap: wrap;
+	margin: 2rem 0;
+}
+
+.banner {
+	transform: skewY(0deg);
+    background-color: rgba(0, 0, 0, .5);
+	border-image: linear-gradient(rgba(255, 255, 255, .5), transparent) 10;
+	border-width: 2.5px;
+	border-style: solid;
+	transition: .5s ease-in-out;
+	width: 17.5%;
+	border-radius: 5px;
+}
+
+.banner:hover {
+	transform: scale(1.1);
+}
+
+.agent-home:hover .banner:not(:hover) {
+	border-radius: 10px;
+	z-index: 10;
+}
+
+.agent-home:hover {
+	transform: scale(1);
+}
+
+.banner:hover .admin-name {
+	padding-bottom: 5rem;
+	padding-top: 3rem;
+	top: 50%;
+	background: linear-gradient(to top, rgba(0,0,0,1), transparent);
+	border-bottom: .2rem solid transparent;
+	color: #e7e7e0;
+	text-shadow: 0 0 10px #9d822b;
+	font-size: 3rem !important;
+}
+
+.banner:hover .loader-icon-23 {
+	filter: blur(5px);
+}
+
+.banner-for-admin-sq:hover::after {
+	content: "❖";
+	font-weight: bolder;
+	color: rgb(134, 134, 69);
+	font-size: 2rem;
+	position: absolute;
+	-webkit-animation: cts 3s infinite linear;
+	animation: cts 3s infinite linear;
+	text-shadow: 2px 2px 10px var(--kyuhi);
+	z-index: 15;
+
+}
+
+.banner-for-admin-se:hover::after {
+	content: "❖";
+	font-weight: bolder;
+	color: rgb(183, 112, 173);
+	font-size: 2rem;
+	position: absolute;
+	-webkit-animation: cts 3s infinite linear;
+	animation: cts 3s infinite linear;
+	text-shadow: 2px 2px 10px var(--kyuhi);
+	z-index: 15;
+
+}
+
+.banner-for-admin-va:hover::after {
+	content: "❖";
+	font-weight: bolder;
+	color: rgb(69, 101, 69);
+	font-size: 2rem;
+	position: absolute;
+	-webkit-animation: cts 3s infinite linear;
+	animation: cts 3s infinite linear;
+	text-shadow: 2px 2px 10px var(--kyuhi);
+	z-index: 15;
+
+}
+
+.banner-for-admin-ky:hover::after {
+	content: "❖";
+	font-weight: bolder;
+	color: rgb(97, 105, 207);
+	font-size: 2rem;
+	position: absolute;
+	-webkit-animation: cts 3s infinite linear;
+	animation: cts 3s infinite linear;
+	text-shadow: 2px 2px 10px var(--kyuhi);
+	z-index: 15;
+
+}
+
+.banner-for-admin-sh:hover::after {
+	content: "❖";
+	font-weight: bolder;
+	color: rgb(161, 108, 79);
+	font-size: 2rem;
+	position: absolute;
+	-webkit-animation: cts 3s infinite linear;
+	animation: cts 3s infinite linear;
+	text-shadow: 2px 2px 10px var(--kyuhi);
+	z-index: 15;
+
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.squid-color {
+	background-image: linear-gradient(to top, rgb(134, 134, 69) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.seqsee-color {
+	background-image: linear-gradient(to top, rgb(183, 112, 173) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.vanikoro-color {
+	background-image: linear-gradient(to top, rgb(69, 101, 69) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.kyuhi-color {
+	background-image: linear-gradient(to top, rgb(97, 105, 207) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.shikoku-color {
+	background-image: linear-gradient(to top, rgb(161, 108, 79) , transparent, transparent);
+	transition: .5s ease-in-out;
+}
+
+.squid-color:hover {
+	background-image: linear-gradient(to top, rgb(134, 134, 69) , transparent);
+	border-top: 5px solid rgb(134, 134, 69);
+}
+
+.seqsee-color:hover {
+	background-image: linear-gradient(to top, rgb(183, 112, 173) , transparent);
+	border-top: 5px solid rgb(183, 112, 173);
+}
+
+.vanikoro-color:hover {
+	background-image: linear-gradient(to top, rgb(69, 101, 69) , transparent);
+	border-top: 5px solid rgb(69, 101, 69);
+}
+
+.kyuhi-color:hover {
+	background-image: linear-gradient(to top, rgb(97, 105, 207) , transparent);
+	border-top: 5px solid rgb(97, 105, 207);
+}
+
+.shikoku-color:hover {
+	background-image: linear-gradient(to top, rgb(161, 108, 79) , transparent);
+	border-top: 5px solid rgb(161, 108, 79);
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+
+.leads-portrait {
+	width: 25vh;
+}
+
+.fade {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.squid {
+	-webkit-animation: squid .85s infinite alternate;
+	animation: squid .85s infinite alternate;
+	filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 1));
+}
+
+.donate-prompt {
+	margin: 1rem;
+	text-align: center;
+}
+
+.leads-photo {
+	display: block;
+	padding: 1rem;
+	border: 3px solid white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+.pepe-admin {
+	position: absolute;
+	width: 12.5vh;
+	-webkit-animation: pepe-cave-anim 10s infinite;
+	animation: pepe-cave-anim 10s infinite;
+	z-index: -1;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+img.vert-move {
+	-webkit-animation: mover .8s infinite alternate;
+	animation: mover .85s infinite alternate;
+}
+
+img.vert-move-2 {
+	-webkit-animation: mover .8s infinite alternate;
+	animation: mover .85s infinite alternate;
+	animation-delay: .1s;
+}
+
+img.vert-move-3 {
+	-webkit-animation: mover .8s infinite alternate;
+	animation: mover .85s infinite alternate;
+	animation-delay: .2s;
+}
+
+img.vert-move-4 {
+	-webkit-animation: mover .8s infinite alternate;
+	animation: mover .85s infinite alternate;
+	animation-delay: .3s;
+}
+
+img.vert-move-5 {
+	-webkit-animation: mover .8s infinite alternate;
+	animation: mover .85s infinite alternate;
+	animation-delay: .4s;
+}
+
+img.vert-move-6 {
+	-webkit-animation: mover .8s infinite alternate;
+	animation: mover .85s infinite alternate;
+	animation-delay: .5s;
+}
+
+.loader-bgs {
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	position: fixed;
+	text-align: center;
+	inset: 0;
+	z-index: 100000;
+	background-image: url('/images/sky-loader.png'), linear-gradient(to bottom, rgba(19, 15, 20, 1), rgba(0, 0, 0, 1), rgba(29, 33, 42, 1));
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	transition: opacity .5, visibility 1s;
+    animation: text-motion 10s infinite;
+}
+
+.fades {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5, visibility 1s;
+}
+
+.loader-icon {
+	width: 10rem;
+    border: 3px solid white;
+	padding: .5rem;
+	border-radius: 50%;
+	border-left: none;
+    border-right: none;
+	border-bottom: none;
+	-webkit-animation: loader-icon .85s infinite alternate;
+	animation: loader-icon .85s infinite alternate;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.loader-icon-1 {
+	width: 7.5rem;
+    border: 2px solid white;
+	padding: .5rem;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	-webkit-animation: loader-icon-2 .85s infinite alternate;
+	animation: loader-icon-2 .85s infinite alternate;
+	background-image: linear-gradient(90deg, rgba(59, 59, 59, .25) , transparent);
+}
+
+.loader-icon-2 {
+	width: 7.5rem;
+    border: 2px solid white;
+	padding: .5rem;
+	border-radius: 50%;
+	margin: 2rem;
+	border-left: none;
+	border-bottom: none;
+	-webkit-animation: loader-icon-2 .85s infinite alternate;
+	animation: loader-icon-2 .85s infinite alternate;
+	background-image: linear-gradient(to bottom, rgba(255,255,255, .10), transparent, transparent);
+}
+
+.loader-icon-23 {
+	width: 10rem;
+	margin: 2rem;
+	transition: 1s ease-in-out;
+}
+
+.loader-icon-23:hover {
+	transform: scale(1.25);
+}
+
+.loader-welcome {
+	filter: brightness(120%);
+	-webkit-text-stroke: .5px white;
+	color: white;
+	font-size: 3rem;
+}
+
+.text-motion {
+	background: linear-gradient(90deg, #fff, #fff);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-color: var(--kyuhi);
+	animation: text-motion-load 1.7s infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.coin {
+	width: 4rem;
+	-webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1));
+    margin-top: 20px;
+}
+
+.pepe-loader {
+	position: absolute;
+	width: 200px;
+	-webkit-animation: cave-anim 10s infinite;
+	animation: pepe-cave-anim 10s infinite;
+	overflow: hidden;
+}
+
+.default {
+	width: 3rem;
+}
+
+.story-button {
+	display: block;
+	border: .5px solid white;
+	border-radius: 5px;
+	padding: 1.2rem 3rem;
+	background-image: linear-gradient(to right,rgba(0, 0, 0, 1), var(--kyuhi) , rgba(0, 0, 0, 1));
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-shadow: -2px 2px 4px 
+	rgba(0, 0, 0, 0.5), 
+	2px -2px 0 
+	rgba(255, 255, 255, 0.5);
+	-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1));
+	cursor: pointer;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+.story-button:hover {
+	transform: translateY(-2px);
+	background-image: linear-gradient(to right,rgba(0, 0, 0, .3), var(--kyuhi), rgba(0, 0, 0, .3));
+}
+
+.a-button {
+	color: #fff;
+	text-decoration: none;
+}
+
+.leads-photo-abs {
+	position: absolute;
+	left: 0;
+	right: 100%;
+	top: 0;
+	text-align: center;
+	border: 5px dotted white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	width: 25%;
+	margin: 1rem;
+	padding: 5px;
+	transition: 1s ease-in-out;
+	z-index: 15;
+}
+
+.banner:hover .leads-photo-abs {
+	transition: 1s ease-in-out;
+	left: 37.5%;
+	top: 42.5%;
+	margin: 0;
+	transform: scale(1.2);
+	border: 1px dotted white;
+}
+
+.banner {
+	cursor: pointer;
+}
+
+.leads-photo-abs2 {
+	display: block;
+	border: 10px double white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+}
+
+.leads-photo-abs3 {
+	display: block;
+	border: 10px dotted white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .5rem;
+	width: 35%;
+}
+
+.leads-photo-abs4 {
+	display: block;
+	border: 10px dotted white;
+	border-radius: 50%;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	width: 8vh;
+}
+
+.mod {
+	margin-top: 2rem;
+}
+
+.mod:hover {
+	transform: scale(1.1);
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.sky-bg, .world-bg, .admins-bg, .coins-bg {
+	background-position: center !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
+	margin-bottom: 1rem;
+}
+
+.sky-bg {
+	background-image: url(/images/spaceship.png) !important;
+}
+
+.world-bg {
+	background-image: url(/images/BG-B.webp) !important;
+}
+
+.admins-bg {
+	background-image: url(/images/corridor-b.png) !important;
+}
+
+.coins-bg {
+	background-image: url(/images/cave.png) !important;
+}
+
+.sky-op, .world-op, .admin-op, .coins-op {
+	padding: 3rem 2rem;
+	border: 3px solid var(--kyuhi);
+	background: linear-gradient(-45deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), linear-gradient(135deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), url(/images/Stone-S.png);
+	background: linear-gradient(-45deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), linear-gradient(135deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), black;
+	border-radius: 5px;
+	box-shadow: 10px 10px 20px black;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.pipe {
+	margin-top: 10%;
+	position: absolute;
+	background-image: url(/images/tube_H.png);
+	z-index: 10;
+	width: 80px;
+	height: 90%;
+	overflow: hidden;
+	-webkit-animation: bones 15s infinite;
+	animation: bones 15s infinite;
+}
+
+.pipe-left {
+	margin-top: 13%;
+	position: absolute;
+	background-image: url(/images/tube_H.png);
+	z-index: 0;
+	width: 80px;
+	height: 90%;
+	overflow: hidden;
+	-webkit-animation: bones 10s infinite;
+	animation: bones 10s infinite;
+	right: 70%;
+}
+
+.pipe-right {
+	margin-top: 7%;
+	position: absolute;
+	background-image: url(/images/tube_H.png);
+	z-index: -1;
+	width: 80px;
+	height: 90%;
+	overflow: hidden;
+	-webkit-animation: bones 30s infinite;
+	animation: bones 30s infinite;
+	right: 0%;
+}
+
+.pipe-to-left {
+	position: relative;
+	background-image: url(/images/chain.png);
+	background-position: center;
+	background-size: contain;
+	z-index: -1;
+	width: 200vw;
+	height: 5rem;
+	overflow: hidden;
+	transform: scale(10);
+	-webkit-animation: pipe-left 15s infinite;
+	animation: pipe-left 15s infinite;
+}
+
+.pipe-to-left::before {
+	content: url(/images/cross.png);
+}
+
+.pipe-to-right {
+	position: relative;
+	background-image: url(/images/chain.png);
+	background-position: center;
+	background-size: contain;
+	z-index: -1;
+	width: 200vw;
+	height: 5rem;
+	overflow: hidden;
+	transform: scale(10);
+	-webkit-animation: pipe-right 15s infinite;
+	animation: pipe-right 15s infinite;
+}
+
+
+.pipe-right::after {
+	content: url(/images/cross.png);
+}
+
+.pipe-left::after {
+	content: url(/images/cross.png);
+}
+
+.pipe-padding {
+	padding-left: 2rem;
+}
+
+.pipe::before {
+	content: url(/images/cross.png);
+}
+
+.pipe-right::before {
+	content: url(/images/pack.webp);
+	position: absolute;
+	left: 0;
+	-webkit-animation: bones-2 60s infinite;
+	animation: bones-2 60s infinite;
+	transform: scale(1);
+}
+
+.pipe-left::before {
+	content: url(/images/pack.webp);
+	position: absolute;
+	left: 0;
+	-webkit-animation: bones-3 15s infinite;
+	animation: bones-3 15s infinite;
+	transform: scale(1);
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.glitch {
+   position: relative;
+   font-size: 80px;
+   font-weight: 700;
+   line-height: .1;
+   color: #fff;
+   letter-spacing: 5px;
+   z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+   display: block;
+   content: attr(data-glitch);
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+}
+
+.glitch:before {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: var(--kyuhi);
+   z-index: -1;
+}
+
+.glitch:after {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: var(--kyuhi);
+   z-index: -2;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.sky-op::before, .world-op::before, .admin-op::before, .coins-op::before {
+	content: "❖";
+	font-weight: bolder;
+	color: var(--kyuhi);
+	font-size: 2.8rem;
+	position: absolute;
+	-webkit-animation: ct 15s infinite linear;
+	animation: ct 15s infinite linear;
+	text-shadow: 2px 2px 10px var(--kyuhi);
+	z-index: 15;
+	top: -2rem;
+}
+
+.container-main {
+	border-top: 3px solid var(--kyuhi);
+	border-bottom: 3px solid var(--kyuhi);
+	padding: 2rem 0;
+	box-shadow: 1px 1px 25px white, 0px 0px 500px 10px rgba(0,0,0,.75) inset;
+	background: linear-gradient(45deg, rgba(104, 104, 104, .3) 0%, black 10%, transparent 50%), linear-gradient(-135deg, rgba(104, 104, 104, .3) 0%, black 10%, transparent 50%);
+}
+
+.container-main::after {
+	content: "❖";
+	font-weight: bolder;
+	color: var(--kyuhi);
+	font-size: 2.8rem;
+	position: absolute;
+	-webkit-animation: ctr 15s infinite;
+	animation: ctr 15s infinite;
+	text-shadow: 2px 2px 10px var(--kyuhi);
+	z-index: 15;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.right-valve {
+	position: absolute;
+	width: 50vw;
+	height: 53vh;
+	background-image: url(/images/stone.webp);
+	background-position: left;
+	background-size: 9.5vh;
+	border: 1rem solid #5d5d5d75;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
+	transform: translateX(50vw);
+	overflow: hidden;
+	transition: 1s ease-out;
+}
+
+.left-valve {
+	position: absolute;
+	width:	50vw;
+	height: 53vh;
+	background-image: url(/images/stone.webp);
+	background-position: right;
+	background-size: 9.5vh;
+	border: 1rem solid #5d5d5d75;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
+	transform: translateX(0vw);
+	overflow: hidden;
+	transition: 1s ease-out;
+}
+
+.left-valve:hover {
+	background-image: url(/images/transparent-stone.webp);
+	background-position: right;
+	background-color: rgba(255, 255, 255,.15);
+	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
+	border: 1rem solid #666666;
+}
+
+.right-valve:hover {
+	background-image: url(/images/transparent-stone.webp);
+	background-position: left;
+	background-color: rgba(255, 255, 255,.15);
+	box-shadow: inset -10px 10px 100px black, 10px 10px 10px black;
+	border: 1rem solid #666666;
+}
+
+.left-valve:hover::before {
+	content: "❖ MINE ☢" !important;
+	right: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(16, 16, 16) !important;
+	text-shadow: 2px 2px 5px black;
+}
+
+.right-valve:hover::before {
+	content: "☢ TEST ❖" !important;
+	left: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(16, 16, 16) !important;
+	text-shadow: 2px 2px 5px black;
+}
+
+.left-valve::before {
+	content: "❖ CRYP ☢";
+	right: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(128, 128, 128);
+	text-shadow: 2px 2px 5px black;
+}
+
+.right-valve::before {
+	content: "☢ TECH ❖";
+	left: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(128, 128, 128);
+	text-shadow: 2px 2px 5px black;
+}
+
+#left-valve, #left-valve-sky, #left-valve-admin, #left-valve-coin {
+
+}
+
+#right-valve, #right-valve-sky, #right-valve-admin, #right-valve-coin {
+
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+
+.card{
+transition-duration: 300ms;
+transition-property: transform, box-shadow;
+transition-timing-function: ease-out;
+transform: rotate3d();
+}
+
+.card:hover {
+transition-duration: 150ms;
+}
+
+.card .glow {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background-image: radial-gradient(circle at -50% 20%, #ffffff22, #0000000f);
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.coin-bg {
+	text-align: center;
+	padding: 1rem;
+	background-color: black;
+	border: 5px double white;
+}
+
+.primary-pic {
+	display: block;
+	visibility: visible;
+  }
+
+.test-coin {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 10%;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.fence {
+	background-image: url(/images/tube_V.png);
+	background-position: center;
+	height: 50px;
+
+}
+
+.test {
+	display: flex;
+}
+
+.leads-portrait-1 {
+	display: inline-block;
+	width: 25vh;
+}
+
+.slideshow-container {
+	display: block;
+	height: 12.5vh;
+}
+
+.admin-name {
+	position: absolute;
+	width: 100%;
+	text-indent: 0 !important;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto;
+	top: 85%;
+	font-size: 2.5rem !important;
+	transition: 1s ease-in-out;
+}
+
+input[type=checkbox] {
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 50vh;
+	z-index: 100;
+	opacity: 0;
+  }
+
+  input[type=checkbox]:checked ~ div.left-valve {
+	transform: translateX(-100vw);
+  }
+		  
+  input[type=checkbox]:checked ~ div.right-valve {
+	transform: translateX(100vw);
+  }
+
+  .earth-bg img#secondary-front-bg{
+	filter: drop-shadow(0px 0px 5px#9d822b);
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,1);
+	-webkit-animation: modal 6s;
+	animation: modal 6s;
+	animation-iteration-count: 1;
+  }
+
+  .modal-content {
+	display: block;
+	text-align: center;
+	padding: 10vh 0;
+	width: 100vw;
+	height: 100vh;
+  }
+
+
+
+.right-valve-modal {
+	position: absolute;
+	width: 50vw;
+	height: 100vh;
+	background-image: url(/images/stone.webp);
+	background-position: left;
+	background-size: 9.5vh;
+	border: 1rem solid #5d5d5d75;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
+	transform: translateX(50vw);
+	overflow: hidden;
+	-webkit-animation: modal-door-right 1s;
+	animation: modal-door-right 1s;
+	animation-iteration-count: 1;
+}
+
+.left-valve-modal {
+	position: absolute;
+	width:	50vw;
+	height: 100vh;
+	background-image: url(/images/stone.webp);
+	background-position: right;
+	background-size: 9.5vh;
+	border: 1rem solid #5d5d5d75;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
+	transform: translateX(0vw);
+	overflow: hidden;
+	-webkit-animation: modal-door-left 1s;
+	animation: modal-door-left 1s;
+	animation-iteration-count: 1;
+}
+
+.left-valve-modal::before {
+	content: "❖ CRYP ☢";
+	right: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(128, 128, 128);
+	text-shadow: 2px 2px 5px black;
+}
+
+.right-valve-modal::before {
+	content: "☢ TECH ❖";
+	left: 1rem;
+	top: 45%;
+	font-weight: bolder;
+	color: var(--kyuhi);
+	position: absolute;
+	z-index: 20;
+	transform: scale(1.5);
+	font-size: 3rem;
+	-webkit-text-stroke-width: .1px;
+	-webkit-text-stroke-color: rgb(128, 128, 128);
+	text-shadow: 2px 2px 5px black;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
