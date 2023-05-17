@@ -387,6 +387,7 @@ img.vert-move-6 {
 	background: linear-gradient(-45deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), linear-gradient(135deg, var(--kyuhi) 0%, rgba(0,0,0, .75) 5%, transparent 50%), black;
 	border-radius: 5px;
 	box-shadow: 10px 10px 20px black;
+	scroll-snap-align: center;
 }
 
 .pipe {
@@ -686,6 +687,7 @@ body {
 	animation: ctr 15s infinite;
 	text-shadow: 2px 2px 10px var(--kyuhi);
 	z-index: 15;
+	scroll-snap-type: x mandatory;
 }
 
 @-webkit-keyframes ctr {
