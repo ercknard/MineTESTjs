@@ -1235,7 +1235,7 @@ img.vert-move-6 {
 	background-position: left;
 	background-size: 9.5vh;
 	border: 1rem solid #5d5d5d75;
-	z-index: 100;
+	z-index: 20;
 	overflow: hidden;
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
 	transform: translateX(50vw);
@@ -1251,7 +1251,7 @@ img.vert-move-6 {
 	background-position: right;
 	background-size: 9.5vh;
 	border: 1rem solid #5d5d5d75;
-	z-index: 100;
+	z-index: 20;
 	overflow: hidden;
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	transform: translateX(0vw);
@@ -1259,7 +1259,7 @@ img.vert-move-6 {
 	transition: 1s ease-out;
 }
 
-.left-valve:hover {
+/* .left-valve:hover {
 	background-image: url(/images/transparent-quartz.webp);
 	background-position: right;
 	background-color: rgba(255, 255, 255,.15);
@@ -1303,7 +1303,7 @@ img.vert-move-6 {
 	-webkit-text-stroke-width: .1px;
 	-webkit-text-stroke-color: rgb(16, 16, 16) !important;
 	text-shadow: 2px 2px 5px black;
-}
+} */
 
 .left-valve::before {
 	content: "❖ CRYP ☢";
