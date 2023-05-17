@@ -1091,22 +1091,26 @@ img.vert-move-6 {
 	right: 0%;
 }
 
+.pipe-to-right::after {
+	content: url(/images/cross-b.png);
+	margin-left: 97.8vw;
+}
+
 .pipe-to-left {
 	position: relative;
 	background-image: url(/images/chain.png);
 	background-position: center;
 	background-size: contain;
 	z-index: -1;
-	width: 200vw;
+	width: 100vw;
 	height: 5rem;
 	overflow: hidden;
-	transform: scale(10);
 	-webkit-animation: pipe-left 15s infinite;
 	animation: pipe-left 15s infinite;
 }
 
-.pipe-to-left::before {
-	content: url(/images/cross.png);
+.pipe-to-left::after {
+	content: url(/images/cross-b.png)
 }
 
 .pipe-to-right {
@@ -1115,10 +1119,9 @@ img.vert-move-6 {
 	background-position: center;
 	background-size: contain;
 	z-index: -1;
-	width: 200vw;
+	width: 100vw;
 	height: 5rem;
 	overflow: hidden;
-	transform: scale(10);
 	-webkit-animation: pipe-right 15s infinite;
 	animation: pipe-right 15s infinite;
 }
