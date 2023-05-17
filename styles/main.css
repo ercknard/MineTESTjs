@@ -21,6 +21,7 @@ html {
 	font-weight: normal;
 	font-family: Minecraftsubfont, Garamond, serif;
 	scroll-snap-type: both proximity;
+	scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
