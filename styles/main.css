@@ -1091,18 +1091,13 @@ img.vert-move-6 {
 	right: 0%;
 }
 
-.pipe-to-right::after {
-	content: url(/images/cross-b.png);
-	margin-left: 97.8vw;
-}
-
 .pipe-to-left {
 	position: relative;
 	background-image: url(/images/chain.png);
 	background-position: center;
 	background-size: contain;
 	z-index: -1;
-	width: 100vw;
+	width: 200vw;
 	height: 5rem;
 	overflow: hidden;
 	-webkit-animation: pipe-left 15s infinite;
@@ -1119,7 +1114,7 @@ img.vert-move-6 {
 	background-position: center;
 	background-size: contain;
 	z-index: -1;
-	width: 100vw;
+	width: 200vw;
 	height: 5rem;
 	overflow: hidden;
 	-webkit-animation: pipe-right 15s infinite;
