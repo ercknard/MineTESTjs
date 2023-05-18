@@ -13,7 +13,7 @@ function toNone() {
 }
 
 var modalleft = document.getElementById("modal-main");
-const themeDelayleft = 1900;
+const themeDelayleft = 2400;
 
 var toRun = function() {
   modalleft.style.display = "block";
