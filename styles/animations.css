@@ -862,6 +862,26 @@
 	}
 }
 
+@-webkit-keyframes modal-door-right-main{
+	0% {
+	}
+
+
+	100%{
+		transform: translateX(100vw);
+	}
+}
+
+@keyframes modal-door-right-main{
+	0% {
+	}
+
+
+	100%{
+		transform: translateX(100vw);
+	}
+}
+
 @-webkit-keyframes modal-door-left {
 	0% {
 	}
@@ -885,6 +905,24 @@
 
 	100%{
 		transform: translateX(0vw);
+	}
+}
+
+@-webkit-keyframes modal-door-left-main {
+	0% {
+	}
+
+	100%{
+		transform: translateX(-50vw);
+	}
+}
+
+@keyframes modal-door-left-main {
+	0% {
+	}
+
+	100%{
+		transform: translateX(-50vw);
 	}
 }
 
