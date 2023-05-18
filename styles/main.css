@@ -1463,7 +1463,6 @@ input[type=checkbox] {
 	background-position: center;
 	background-repeat: no-repeat;
 	text-align: center;
-	display: grid;
 	place-items: center;
   }
 
@@ -1555,8 +1554,8 @@ input[type=checkbox] {
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
 	transform: translateX(50vw);
 	overflow: hidden;
-	-webkit-animation: modal-door-right-main 2.5s;
-	animation: modal-door-right-main 2.5s;
+	-webkit-animation: modal-door-right-main 2s ease-in-out;
+	animation: modal-door-right-main 2s ease-in-out;
 	animation-iteration-count: 1;
 }
 
@@ -1573,8 +1572,8 @@ input[type=checkbox] {
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	transform: translateX(0vw);
 	overflow: hidden;
-	-webkit-animation: modal-door-left-main 2.5s;
-	animation: modal-door-left-main 2.5s;
+	-webkit-animation: modal-door-left-main 2s ease-in-out;
+	animation: modal-door-left-main 2s ease-in-out;
 	animation-iteration-count: 1;
 }
 
