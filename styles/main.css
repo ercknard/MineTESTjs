@@ -1239,7 +1239,6 @@ img.vert-move-6 {
 	overflow: hidden;
 	box-shadow: inset 10px 10px 100px black, 10px 10px 10px black;
 	transform: translateX(50vw);
-	overflow: hidden;
 	transition: 1s ease-out;
 }
 
@@ -1255,7 +1254,6 @@ img.vert-move-6 {
 	overflow: hidden;
 	box-shadow: inset -10px 10px 100px black, -10px 10px 10px black;
 	transform: translateX(0vw);
-	overflow: hidden;
 	transition: 1s ease-out;
 }
 
