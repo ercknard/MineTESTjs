@@ -926,3 +926,23 @@
 	}
 }
 
+@-webkit-keyframes squid-chain {
+	0% {
+		transform: translateY(0) scale(.15);
+	}
+
+	100% {
+		transform: translateY(-3px) scale(.15);
+	}
+}
+
+@keyframes squid-chain {
+	0% {
+		transform: translateY(0) scale(.15);
+	}
+
+	100% {
+		transform: translateY(-3px) scale(.15);
+	}
+}
+

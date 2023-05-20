@@ -14,6 +14,7 @@ let rightearth = document.getElementById('right-valve');
 let leftcoin = document.getElementById('left-valve-coin');
 let rightcoin = document.getElementById('right-valve-coin');
 let chain = document.getElementById('chain');
+// let chaindoll = document.querySelector('.chain:after');
 // let leftchain = document.querySelector('.pipe-to-left');
 // let rightchain = document.querySelectorAll('.pipe-to-right');
 // let space = document.getElementById('op-space');
@@ -27,6 +28,7 @@ window.addEventListener('scroll',function(){
     // rightchain.style.left = value * -1 + 'px';
     // leftchain.style.left = value * 1 + 'px';
     chain.style.top = value * -.1 + 'px';
+    // chaindoll.style.top = value * .5 + 'px';
     secondary_front_bg.style.top = value * 0.10 + 'px';
     primary_front_bg.style.top = value * 0.20 + 'px';
     front_bg.style.top = value * 0.40 + 'px';
