@@ -217,7 +217,8 @@ p {
 .sec h2 {
     font-family: Minecraftsubfont, Garamond, serif;
     font-size: 3.5em;
-    color: #fff;
+	color: #e7e7e0;
+	text-shadow: 0 0 15px #9d822b;
 	text-align: center;
 	margin-bottom: 1.5rem;
 	margin-top: 1rem;
@@ -305,12 +306,19 @@ header {
 }
 
 .index-navigation-main {
-	position: -webkit-sticky;
-	position: sticky;
+	z-index: 10000;
+	position: fixed;
+	width: 100%;
 	top: 0;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
+	color: #e7e7e0;
+	text-shadow: 0 0 15px #9d822b;
+}
+
+.index-navigation-main.scrolled {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) !important;
 	border-bottom: 2px solid var(--kyuhi);
-	border-top: 2px solid var(--kyuhi);
+	transition: 1s ease;
 }
 
 .index-logo-main {
@@ -322,11 +330,20 @@ header {
 
 .main-footer {
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 	width: 100%;
-	position: absolute;
-	z-index: 10;
+	position: fixed;
+	z-index: 100000;
+	bottom: 0;
+	color: #e7e7e0;
+	text-shadow: 0 0 15px #9d822b;
+	transition: 1s ease;
+}
+
+.main-footer.scrolled {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+	border-top: 2px solid var(--kyuhi);
 }
 
 .social-icon,
@@ -1624,4 +1641,43 @@ input[type=checkbox] {
 	width: 5rem;
     height: 5rem;
 	transition: 1s ease-in-out;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+.gear-fabs {
+	display: none;
+}
+
+.gear-fabs-1 {
+	display: none;
+}
+
+.chain {
+	display: block;
+	position: fixed;
+	background-image: url(/images/chain-V.png);
+	width: 5rem;
+	z-index: 9999;
+	height: 500%;
+	right: 2vh;
+	filter: drop-shadow(16px 5px 3px black);
+	transition: 1s ease;
+}
+
+.gear-fabs.scrolled {
+	display: block;
+	position: fixed;
+	z-index: 100000;
+	bottom: 2vh;
+	right: 2vh;
+	width: 5rem;
+}
+
+.gear-fabs-1.scrolled {
+	display: block;
+	position: fixed;
+	z-index: 100000;
+	top: 2vh;
+	right: 2vh;
+	width: 5rem;
 }

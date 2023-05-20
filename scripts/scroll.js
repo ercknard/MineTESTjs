@@ -1,7 +1,14 @@
 
   $(function () {
     $(document).scroll(function () {
-      var $nav = $(".index-navigation");
+      var $nav = $(".index-navigation-main");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".main-footer");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
@@ -9,6 +16,27 @@
   $(function () {
     $(document).scroll(function () {
       var $nav = $("#web_title");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".gear-fabs");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".gear-fabs-1");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".chain");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });

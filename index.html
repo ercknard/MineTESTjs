@@ -19,12 +19,62 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-    <!-- <div class="index-navigation">
+  <header>
+    <div class="index-navigation-main">
       <div class="width-class">
-            <span> <img class="index-logo" src="images/CryptechTest.png"> </span>
+        <ul class="navigation-list">
+          <li>
+            <div class="nav-buttons">HOME</div>
+          </li>
+          <li>
+            <div class="nav-buttons">SERVERS</div>
+          </li>
+          <li>
+            <div class="nav-buttons">AGES</div>
+          </li>
+            <span> <img class="index-logo-main" src="images/pack.png"> </span>
+          <li>
+            <div class="nav-buttons">SUPPORT</div>
+          </li>
+          <li>
+            <div class="nav-buttons">ABOUT</div>
+          </li>
+          <li>
+            <div class="nav-buttons">DONATE</div>
+          </li>
+        </ul>
       </div>
-    </div> -->
+    </div>
+  </header>
+  <footer class="main-footer">
+    <ul class="social-icon">
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://twitter.com/CryptechCraft">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://discord.com/invite/WxvrzzPFAH">
+          <ion-icon name="logo-discord"></ion-icon>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+    </ul>
+    <h3 class="main-footer-text text-motion-index"> © 2023 CryptechTest : MINETEST Server | All rights reserved.</h3>
+  </footer>
   <body id="parallax" >
+    <span id="chain" class="chain"></span>
+    <img id="reload" class="gear-fabs" src="images/wheel.png">
+    <img id="reload-1" class="gear-fabs-1" src="images/wheel.png">
     <div id="particles-js">
       <script src="scripts/particlescdn.js"></script>
       <script src="scripts/particles.js"></script>
@@ -62,33 +112,6 @@
     </div>
     <div class="sec-2">
       <div class="sec">
-        <header>
-          <div class="index-navigation-main">
-            <div class="width-class">
-              <ul class="navigation-list">
-                <li>
-                  <div class="nav-buttons">HOME</div>
-                </li>
-                <li>
-                  <div class="nav-buttons">SERVERS</div>
-                </li>
-                <li>
-                  <div class="nav-buttons">AGES</div>
-                </li>
-                  <span> <img class="index-logo-main" src="images/pack.png"> </span>
-                <li>
-                  <div class="nav-buttons">SUPPORT</div>
-                </li>
-                <li>
-                  <div class="nav-buttons">ABOUT</div>
-                </li>
-                <li>
-                  <div class="nav-buttons">DONATE</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
 
         <!--------------------------------------------------SPACESHIP----------------------------------------------------------->
 
@@ -97,7 +120,7 @@
         <div id="left-valve-sky" class="left-valve"></div> 
         <div id="right-valve-sky" class="right-valve"></div>
         <div class="width-class">
-          <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" class="pipe-right"> </div>
+          <!-- <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" class="pipe-right"> </div> -->
           <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom" class="glitch" data-glitch="THE SPACE STATION"> THE SPACE STATION </h2>
 
           <!-- <span class="typed-text"></span><span class="cursor typing">|</span></h2> -->
@@ -110,7 +133,7 @@
           </section>
 
           <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" class="pipe"> </div>
-          <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" class="pipe-left"> </div>
+          <!-- <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" class="pipe-left"> </div> -->
         </div>
         <section class="container-main-sky">
           <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000" class="pipe-to-left"> </div>
@@ -439,31 +462,7 @@
     </div>
 
     <!--------------------------------------------------FOOTER----------------------------------------------------------->
-    <footer class="main-footer">
-      <ul class="social-icon">
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="https://twitter.com/CryptechCraft">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="https://discord.com/invite/WxvrzzPFAH">
-            <ion-icon name="logo-discord"></ion-icon>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-      </ul>
-      <h3 class="main-footer-text text-motion-index"> © 2023 CryptechTest : MINETEST Server | All rights reserved.</h3>
-    </footer>
+
   </body>
 
   <!--------------------------------------------------LOADER----------------------------------------------------------->
