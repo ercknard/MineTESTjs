@@ -9,11 +9,13 @@ let leftsky = document.getElementById('left-valve-sky');
 let rightsky = document.getElementById('right-valve-sky');
 let leftadmin = document.getElementById('left-valve-admin');
 let rightadmin = document.getElementById('right-valve-admin');
-let left = document.getElementById('left-valve');
-let right = document.getElementById('right-valve');
+let leftearth = document.getElementById('left-valve');
+let rightearth = document.getElementById('right-valve');
 let leftcoin = document.getElementById('left-valve-coin');
 let rightcoin = document.getElementById('right-valve-coin');
 let chain = document.getElementById('chain');
+// let leftchain = document.querySelector('.pipe-to-left');
+// let rightchain = document.querySelectorAll('.pipe-to-right');
 // let space = document.getElementById('op-space');
 // let world = document.getElementById('op-world');
 // let admin = document.getElementById('op-admin');
@@ -21,6 +23,9 @@ let chain = document.getElementById('chain');
 
 window.addEventListener('scroll',function(){
     let value = window.scrollY;
+
+    // rightchain.style.left = value * -1 + 'px';
+    // leftchain.style.left = value * 1 + 'px';
     chain.style.top = value * -.1 + 'px';
     secondary_front_bg.style.top = value * 0.10 + 'px';
     primary_front_bg.style.top = value * 0.20 + 'px';
@@ -31,8 +36,8 @@ window.addEventListener('scroll',function(){
     back_bg.style.top = value * 0.80 + 'px';
     leftsky.style.left = value * -.5 + 'px';
     rightsky.style.left = value * .5 + 'px';
-    left.style.left = value * -.25 + 'px';
-    right.style.left = value * .25 + 'px';
+    leftearth.style.left = value * -.25 + 'px';
+    rightearth.style.left = value * .25 + 'px';
     leftadmin.style.left = value * -.15 + 'px';
     rightadmin.style.left = value * .15 + 'px';
     leftcoin.style.left = value * -.15 + 'px';
